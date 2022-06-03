@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background-color: tan;
+    align-items: center;
+    padding: 0.5%;
+    padding-top: 1%;
+}
+
+.signature {
+    width: 20%;
+    margin-left: 4%;
+    // background-color: aqua;
+}
+
+.links {
+    display: flex;
+    margin-right: 4%;
+    width: 24%;
+    justify-content: space-between;
+    // background-color: aqua;
+}
+
+.link {
+    font-family: 'Nunito Sans';
+    color: black;
+    text-decoration: none;
+}
