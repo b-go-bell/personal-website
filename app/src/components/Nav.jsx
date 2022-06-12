@@ -3,9 +3,11 @@ import './../resources/styles/components/Nav.scss'
 
 function Nav() {
     return(
-        <div className="container">
+        <div className="nav-container">
             <div className="home">
-                <img src={sign} className="signature"/>
+                <a href="/">
+                    <img src={sign} className="signature" alt="logo-signature"/>
+                </a>
             </div>
             <div className="links">
                 <a className="link" href="/experience">
