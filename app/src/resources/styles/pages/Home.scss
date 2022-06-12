@@ -1,11 +1,66 @@
+
+@media screen and (min-width: 800px) {
+  .home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+}
+
 .home-container {
   display: flex;
   height: 100vh;
-  flex-direction: column;
+  flex-direction: column
 }
 
-.home-content {
+.info {
+  font-family: 'Nunito Sans';
+  font-size: calc(16px + 0.8vw);
+  margin: 4vw;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: calc(28px + 0.8vw);
+  color: #00997B;
+}
+
+.para {
+  font-size: calc(10px + 0.8vw);
+  padding-right: 8vw;
+}
+
+.para-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: calc(10px + 0.8vw);
+}
+
+.external-links {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.icon {
+  width: calc(20px + 2vw);
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+.icon:hover {
+  width: calc(20px + 2vw);
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  opacity: 0.8;
 }

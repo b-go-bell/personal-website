@@ -23,10 +23,6 @@ function Crossword() {
         if(focusWord === null || focusWord === switchFocus1 || focusWord === switchFocus2){
             setFocusWord(focus);
         }
-
-        if(focusWord === 0){
-
-        }
     }
 
     function change(character, inp, setInp, forwardLocArr) {
@@ -67,9 +63,136 @@ function Crossword() {
 
     }
 
+    function firstHint(){
+        if((bInput === 'b' || bInput === 'B') &&
+            (firstRInput === 'r' || firstRInput === 'R') &&
+            (iInput === 'i' || iInput === 'I') &&
+            (dInput === 'd' || dInput === 'D') &&
+            (firstGInput === 'g' || firstGInput === 'G') &&
+            (firstEInput === 'e' || firstEInput === 'E') &&
+            (tInput === 't' || tInput === 'T')){
+                return true;
+            }
+        return false;
+    }
+
+    function middleHint(){
+        if((middleGInput === 'g' || middleGInput === 'G') &&
+            (o1Input === 'o' || o1Input === 'O') &&
+            (middleRInput === 'r' || middleRInput === 'R') &&
+            (dInput === 'd' || dInput === 'D') &&
+            (o2Input === 'o' || o2Input === 'O') &&
+            (nInput === 'n' || nInput === 'N')){
+                return true;
+        }
+        return false;
+    }
+
+    function lastHint(){
+        if((bInput === 'b' || bInput === 'B') &&
+            (lastEInput === 'e' || lastEInput === 'E') &&
+            (l1Input === 'l' || l1Input === 'L') &&
+            (l2Input === 'l' || l2Input === 'L')){
+                return true;
+            }
+        return false;
+    }
+
+    function colorFirst() {
+        if(firstHint()){
+            document.getElementById("hint1").style.color = "#00997B";
+
+            document.getElementById("b").style.color = "#00997B";
+            document.getElementById("firstR").style.color = "#00997B";
+            document.getElementById("i").style.color = "#00997B";
+            document.getElementById("d").style.color = "#00997B";
+            document.getElementById("firstG").style.color = "#00997B";
+            document.getElementById("firstE").style.color = "#00997B";
+            document.getElementById("t").style.color = "#00997B";
+          }
+        else{
+            document.getElementById("hint1").style.color = "#000000";
+
+            document.getElementById("b").style.color = "#000000";
+            document.getElementById("firstR").style.color = "#000000";
+            document.getElementById("i").style.color = "#000000";
+            document.getElementById("d").style.color = "#000000";
+            document.getElementById("firstG").style.color = "#000000";
+            document.getElementById("firstE").style.color = "#000000";
+            document.getElementById("t").style.color = "#000000";
+        }
+    }
+
+    function colorMiddle() {
+        if(middleHint()){
+            document.getElementById("hint2").style.color = "#00997B";
+
+            document.getElementById("middleG").style.color = "#00997B";
+            document.getElementById("O1").style.color = "#00997B";
+            document.getElementById("middleR").style.color = "#00997B";
+            document.getElementById("d").style.color = "#00997B";
+            document.getElementById("O2").style.color = "#00997B";
+            document.getElementById("n").style.color = "#00997B";
+        } else {
+            document.getElementById("hint2").style.color = "#000000";
+
+            document.getElementById("middleG").style.color = "#000000";
+            document.getElementById("O1").style.color = "#000000";
+            document.getElementById("middleR").style.color = "#000000";
+            document.getElementById("d").style.color = "#000000";
+            document.getElementById("O2").style.color = "#000000";
+            document.getElementById("n").style.color = "#000000";
+        }
+    }
+
+    function colorLast() {
+        if(lastHint()){
+            document.getElementById("hint3").style.color = "#00997B";
+
+            document.getElementById("b").style.color = "#00997B";
+            document.getElementById("lastE").style.color = "#00997B";
+            document.getElementById("L1").style.color = "#00997B";
+            document.getElementById("L2").style.color = "#00997B";
+        }
+        else {
+            document.getElementById("hint3").style.color = "#000000";
+
+            document.getElementById("b").style.color = "#000000";
+            document.getElementById("lastE").style.color = "#000000";
+            document.getElementById("L1").style.color = "#000000";
+            document.getElementById("L2").style.color = "#000000";
+        }
+    }
+
 
     useEffect( () => {
-    }, [focusWord]);
+
+        //checking first name
+        colorFirst();
+
+        //checking middle name
+        colorMiddle();
+
+        //color last name
+        colorLast();
+
+        //check overlap squares: b and g
+        if(firstHint() || lastHint()){
+            document.getElementById("b").style.color = "#00997B";
+        }
+        else {
+            document.getElementById("b").style.color = "#000000";
+        }
+
+        if(firstHint() || middleHint()){
+            document.getElementById("d").style.color = "#00997B";
+        }
+        else {
+            document.getElementById("d").style.color = "#000000";
+        }
+
+
+    }, [focusWord, bInput, firstRInput, iInput, dInput, firstGInput, firstEInput, tInput, lastEInput, l1Input, l2Input, middleGInput, o1Input, middleRInput, o2Input, nInput]);
 
     return(
         <div className="crossword-container">
@@ -157,18 +280,18 @@ function Crossword() {
                 <p className="hintLabel">
                     ACROSS
                 </p>
-                <p className="hint" onClick={() => {document.getElementById("b").click(); document.getElementById("b").focus();}}>
+                <p className="hint" id="hint1" onClick={() => {setFocusWord(0); document.getElementById("b").click(); document.getElementById("b").focus();}}>
                     &emsp;1. Jones with a diary
                 </p>
                 <br/>
                 <p className="hintLabel">
                     DOWN
                 </p>
-                <p className="hint" onClick={() => {setFocusWord(2); document.getElementById("b").click(); document.getElementById("b").focus();}}>
-                    &emsp;1. Mexican fast food
+                <p className="hint" id="hint3" onClick={() => {setFocusWord(2); document.getElementById("b").click(); document.getElementById("b").focus();}}>
+                    &emsp;1. Mexican fast food chain
                 </p>
-                <p className="hint" onClick={() => {setFocusWord(2); document.getElementById("middleG").click(); document.getElementById("middleG").focus();}}>
-                    &emsp;2. "Hell's Kitchen" Ramsay
+                <p className="hint"  id="hint2" onClick={() => {setFocusWord(1); document.getElementById("middleG").click(); document.getElementById("middleG").focus();}}>
+                    &emsp;2. 'idiot sandwich' chef
                 </p>
             </div>
         </div>
