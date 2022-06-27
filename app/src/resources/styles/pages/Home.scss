@@ -3,6 +3,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 8vh;
+    animation-duration: 2s;
+    animation-name: slideup;
+  }
+
+  .info {
+    font-family: 'Nunito Sans';
+    font-size: calc(12px + 0.8vw);
+    margin: 6vw;
+    padding-top: 4vh;
+    // margin-left: 10vw;
+    // margin-right: 10vw;
   }
 }
 
@@ -11,7 +25,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 13vh;
+    animation-duration: 2s;
+    animation-name: slideup;
+  }
+
+  .info {
+    font-family: 'Nunito Sans';
+    font-size: calc(12px + 0.8vw);
+    margin: 6vw;
+    padding-top: calc(2vw + 10vh);
+    // margin-left: 10vw;
+    // margin-right: 10vw;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -21,20 +57,16 @@
   flex-direction: column
 }
 
-.info {
-  font-family: 'Nunito Sans';
-  font-size: calc(16px + 0.8vw);
-  margin: 4vw;
-}
+
 
 .title {
   font-weight: bolder;
-  font-size: calc(28px + 0.8vw);
+  font-size: calc(20px + 0.8vw);
   color: #00997B;
 }
 
 .para {
-  font-size: calc(10px + 0.8vw);
+  font-size: calc(12px + 0.5vw);
   padding-right: 8vw;
 }
 
@@ -42,26 +74,33 @@
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: calc(10px + 0.8vw);
+  font-size: calc(12px + 0.5vw);
 }
 
 .para-link:hover {
   text-decoration: none;
   font-weight: bold;
   color: #00997B;
-  font-size: calc(10px + 0.8vw);
+  font-size: calc(13px + 0.5vw);
 }
 
 .external-links {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 5vh;
 }
 
 .icon {
-  width: calc(20px + 2vw);
+  width: calc(16px + 1vw);
   margin-left: 1.5vw;
   margin-right: 1.5vw;
+}
+
+.mail-icon {
+  width: calc(16px + 1vw);
+  margin-top: calc(2px + 0.1vw);
+  margin-left: 1.5vw;
+  margin-right: 3vw;
 }
 
 

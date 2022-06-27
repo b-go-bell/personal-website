@@ -5,8 +5,9 @@ function Nav() {
     return(
         <div className="nav-container">
             <div className="home">
-                <a href="/">
-                    <img src={sign} className="signature" alt="logo-signature"/>
+                <a href="/" className="signature">
+                    {/* <img src={sign} className="signature" alt="logo-signature"/> */}
+                    BRIDGET G BELL
                 </a>
             </div>
             <div className="links">

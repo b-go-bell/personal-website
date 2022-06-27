@@ -1,18 +1,19 @@
 import './../resources/styles/pages/Home.scss';
 import Nav from './../components/Nav.jsx';
 import Crossword from './../components/home/Crossword.jsx';
+import { useState } from 'react';
 
-import mail from './../resources/media/home/mail.png';
-import email from './../resources/media/home/emerald-mail.png';
-import linkedin from './../resources/media/home/linkedin.png';
-import elinkedin from './../resources/media/home/emerald-linkedin.png';
-import github from './../resources/media/home/github.png';
-import egithub from './../resources/media/home/emerald-github.png';
+import mail from './../resources/media/home/mail-outline.jpg';
+import email from './../resources/media/home/email.png';
+import linkedin from './../resources/media/home/linkedin-outline.png';
+import elinkedin from './../resources/media/home/elinkedin.png';
+import github from './../resources/media/home/github-outline.png';
+import egithub from './../resources/media/home/egithub.png';
 
 function Home() {
 
   function hover(id) {
-    if(id === 'mail')
+    //if(id === 'mail')
       document.getElementById(id).src = email;
     if(id === 'github')
       document.getElementById(id).src = egithub;
@@ -29,42 +30,38 @@ function Home() {
       document.getElementById(id).src = linkedin;
   }
 
+  const duration = 300;
+  const [showButton, setShowButton] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
+
+
+
+
   return (
     <div className="home-container">
       <Nav/>
       <div className="home-content">
+        <div>
         <Crossword/>
+        </div>
         <div className="info">
           <div>
-            <span className="title">Bridget G Bell</span> is a software engineer, UX/UI designer, and passionate learner, among many other things. Read on to learn more.
-          </div>
-          <br/>
-          <div className="para">
-            From a Fortune 500 to a non-profit, I've taken my skills to a variety of places.
-              <a  className="para-link" href="/experience"> Experience⟶</a>
-          </div>
-          <br/>
-          <div className="para">
-            No matter where I am, I love to think, plan, and, most of all, create.
-            <a  className="para-link" href="/projects"> Projects⟶</a>
-          </div>
-          <br/>
-          <div className="para">
-            Hiking, music-ing, running, tennis-ing, and cooking is just the beginning.
-            <a  className="para-link" href="/leisure"> Leisure⟶</a>
+            <span className="title">Bridget G Bell</span> is a software engineer, UX/UI designer, and passionate learner, among many other things. Explore this site to learn more.
           </div>
           <br/>
           <div className="external-links">
               <a href="mailto:bridget.go.bell@gmail.com" className="mail-icon">
-                <img id="mail" src={mail} className="icon"  alt="mail" onMouseOver={ () => hover("mail")} onMouseOut={() => unhover("mail")} />
-              </a>
-              <a href="https://github.com/b-go-bell" target="_blank" rel="noopener noreferrer">
-                <img id="github" src={github} className="icon" alt="github" onMouseOver={ () => hover("github")} onMouseOut={() => unhover("github")} />
+                <img id="mail" src={mail} className="mail-icon" alt="mail" onMouseOver={ () => hover("mail")} onMouseOut={() => unhover("mail")} />
               </a>
               <a href="https://www.linkedin.com/in/bridget-go-bell/" target="_blank" rel="noopener noreferrer">
                 <img id="linkedin" src={linkedin} className="icon" alt="linkedin" onMouseOver={ () => hover("linkedin")} onMouseOut={() => unhover("linkedin")}/>
               </a>
+              <a href="https://github.com/b-go-bell" target="_blank" rel="noopener noreferrer">
+                <img id="github" src={github} className="icon" alt="github" onMouseOver={ () => hover("github")} onMouseOut={() => unhover("github")} />
+              </a>
           </div>
+          <br/>
+          <br/>
           <br/>
         </div>
       </div>

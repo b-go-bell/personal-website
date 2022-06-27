@@ -1,4 +1,5 @@
 import './../../resources/styles/components/home/Crossword.scss'
+import arrow from './../../resources/media/home/arrow.png'
 import { useState, useEffect } from 'react';
 function Crossword() {
     const [ bInput, setBInput ] = useState('');
@@ -293,6 +294,10 @@ function Crossword() {
                 <p className="hint"  id="hint2" onClick={() => {setFocusWord(1); document.getElementById("middleG").click(); document.getElementById("middleG").focus();}}>
                     &emsp;2. 'idiot sandwich' chef
                 </p>
+            </div>
+            <img src={arrow}  className="arrow"/>
+            <div className="play">
+                fill me in !
             </div>
         </div>
     );

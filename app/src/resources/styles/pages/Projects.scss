@@ -1,0 +1,25 @@
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.etu {
+    margin-top: 10vh;
+    width: 54vw;
+}
+
+.description {
+    color: white;
+    width: 46vw;
+    background-color: maroon;
+}
