@@ -1,0 +1,275 @@
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .h-project {
+        display: flex;
+        flex-direction: row;
+        background: var(--color-basic-secondary);
+        justify-content: space-between;
+        width: 100vw;
+        height: 92vh;
+        align-items: center;
+    }
+
+    .etu {
+        width:90vh;
+        height:100vh;
+        animation-duration: 2s;
+        animation-name: slideup;
+    }
+
+    .h-description {
+        width: 40vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .r-description {
+        width: 40vw;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .l-description {
+        width: 40vw;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 8vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .l-project-image {
+        width: 50vw;
+    }
+
+    .r-project-image {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .h-project {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-basic-secondary);
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .etu {
+        padding-top: 10vh;
+        width: 90vw;
+        height: 100vh;
+        animation-duration: 2s;
+        animation-name: slideup;
+    }
+
+    .h-description {
+        width: 80vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .r-description {
+        width: 80vw;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10vh;
+        margin-top: -4vh;
+    }
+
+    .l-description {
+        width: 80vw;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10vh;
+        margin-top: -4vh;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .r-project-image {
+        width: 90vw;
+    }
+
+    .l-project-image {
+        width: 90vw;
+    }
+}
+
+@keyframes slideup {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .parallax-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.other-projects {
+    background-color: var(--color-basic-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+/////////HEADER////////////////
+
+.h-project-title {
+    color: var(--color);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-left: 8vw;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: var(--font-size-h0);
+}
+
+.h-project-info {
+    color: var(--color-basic-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin-top: 20vh;
+}
+
+.h-project-descrip {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-left: 8vw;
+    margin-right: 2vw;
+    margin-top: 3vh;
+    font-size: var(--font-size-h3);
+}
+
+
+.h-project-details {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    margin-left: 8vw;
+    font-size: var(--font-size-h4);
+}
+
+.h-project-notice {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    margin-left: 8vw;
+    margin-bottom: 6vh;
+    font-size: var(--font-size-h4);
+}
+
+/////////////////////////
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin-right: 2vw;
+    margin-top: 12vh;
+}
+
+/////////RIGHT////////////////
+
+.r-project-title {
+    color: var(--color-secondary);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-left: 7vw;
+    margin-bottom: 2vh;
+    font-size: var(--font-size-h1);
+}
+
+.r-project-descrip {
+    color: var(--color-basic-secondary);
+    font-family: 'Nunito';
+    margin-left: 7vw;
+    margin-top: 3vh;
+    font-size: var(--font-size-h4);
+}
+
+.r-project-details {
+    color: var(--color-basic-secondary);
+    margin-left: 7vw;
+    font-family: 'Nunito';
+    font-size: var(--font-size-body);
+}
+
+//////////////////////////
+
+/////////LEFT////////////////
+
+.l-project-title {
+    color: var(--color-secondary);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-right: 7vw;
+    margin-bottom: 2vh;
+    font-size: calc(24px + 0.8vw);
+}
+
+.l-project-descrip {
+    color: var(--color-basic-secondary);
+    font-family: 'Nunito';
+    margin-right: 7vw;
+    margin-top: 3vh;
+    font-size: calc(10px + 0.4vw);
+}
+
+.l-project-details {
+    color: var(--color-basic-secondary);
+    margin-right: 7vw;
+    font-family: 'Nunito';
+    font-size: calc(10px + 0.3vw);
+}
+
+//////////////////////////
+
+.bottom {
+    height: 15vh;
+}
+

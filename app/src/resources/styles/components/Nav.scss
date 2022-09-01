@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+@media screen and (min-width: 800px) {
+    .nav-container {
+        height: calc(8vh + 20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5%;
+        padding-top: calc(1vh + 1px);
+        padding-left: 4vw;
+        padding-right: 4vw;
+        background-color: var(--color-primary);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5%;
+        padding-top: 1%;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        background-color: var(--color-primary);
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signature {
+    font-family: 'Nunito';
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: var(--font-size-h3);
+}
+
+.signature:hover {
+    font-family: 'Nunito';
+    text-decoration: none;
+    color: var(--color-highlight);
+    font-weight: bold;
+    font-size: var(--font-size-h3);
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    font-family: 'Nunito';
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-h3);
+    margin-left: 1.8vw;
+    margin-right: 1.8vw;
+
+}
+
+.link:hover {
+    font-family: 'Nunito';
+    color: var(--color-highlight);
+    text-decoration: none;
+    font-size: var(--font-size-h3);
+    margin-left: 1.8vw;
+    margin-right: 1.8vw;
+
+}

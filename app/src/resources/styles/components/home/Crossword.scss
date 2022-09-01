@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+.crossword-container {
+    width: calc(24vw + 24vh);
+    height: calc(24vw + 24vh);
+    display: grid;
+    grid-template-columns: repeat(9, 12%);
+    grid-template-rows: repeat(9, 12%);
+    justify-content: center;
+    overflow-x: visible;
+    margin-left: 8vw;
+}
+
+.hints {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 10;
+    font-family: 'Nunito Sans';
+}
+
+.hintLabel {
+    font-size: calc(9px + 0.5vw);
+    padding: 0;
+    padding-left: 3vw;
+    margin: 0;
+}
+
+.hint {
+    font-size: calc(8px + 0.5vw);
+    padding: 0;
+    margin: 6px;
+    padding-left: 3vw;
+    cursor: pointer;
+
+}
+
+.hint1 {
+    font-family: 'Nunito Sans';
+    font-size: 12px;
+    grid-column: 1/1;
+    grid-row: 4/4;
+    padding: 4px;
+    background-color: transparent;
+}
+
+.hint2 {
+    font-family: 'Nunito Sans';
+    font-size: 12px;
+    grid-column: 4/4;
+    grid-row: 1/1;
+    padding: 4px;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 800px) {
+    .arrow {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        width: calc(20px + 4vw);
+        align-self: end;
+        vertical-align: end;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+    }
+
+    .play {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 3vw;
+        margin-left: 2vw;
+        font-family: 'Architects Daughter';
+        font-size: calc(16px + 0.5vw);
+        transform: rotate(-10deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .arrow {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: calc(15px + 1vw + 1.5vh);
+        align-self: end;
+        vertical-align: end;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+    }
+
+    .play {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 3vw;
+        margin-left: 2vw;
+        font-family: 'Architects Daughter';
+        font-size: calc(12px + 0.5vw);
+        transform: rotate(-10deg);
+    }
+}
+
+.boxB {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxFirstR {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    padding-bottom: 5px;
+}
+
+.boxI {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    border-right: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    padding-bottom: 5px;
+}
+
+.boxD {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxFirstG {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    padding-bottom: 5px;
+}
+
+.boxFirstE {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    border-right: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxT {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxLastE {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxL1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid black;
+    border-bottom: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxL2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxMiddleG {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxO1 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxMiddleR {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid black;
+    border-bottom: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxO2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+
+.boxN {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid black;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+}
+

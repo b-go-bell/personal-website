@@ -1,0 +1,257 @@
+@import "./../../../design-tokens/css-variables.scss";
+
+.leisure-content-container {
+    width: 75vw;
+    margin-right: 8vw;
+    margin-top: 2vh;
+    font-size: var(--font-size-h0);
+
+}
+
+@media screen and (min-width: 1200px) {
+    .music-content-container {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        animation-duration: 2s;
+        animation-name: slide-right;
+    }
+
+    .content-container-sl {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        animation-duration: 2s;
+        animation-name: slide-left;
+    }
+
+    .content-container-header {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h0);
+        margin-bottom: 5vh;
+    }
+
+    .leisure-content {
+        padding-left: calc(5px + 0.5vw);
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .tennis-leisure-content {
+        padding-left: calc(5px + 3vw);
+        padding-right: calc(5px + 0.5vw);
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .viola-leisure-content {
+        padding-left: calc(5px + 0.5vw);
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .leisure-content-h3 {
+        padding-left: calc(5px + 0.5vw);
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h3);
+        text-align: left;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .video-width {
+        width: 30vw;
+        animation-duration: 2s;
+        animation-name: slideright;
+    }
+
+    .running-image {
+        width: 30vw;
+    }
+
+    .video-caption {
+        font-size: var(--font-size-h4);
+        font-style: italic;
+        color: var(--color-basic-secondary);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content-container {
+        display: flex;
+        //flex-direction: column;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        animation-duration: 2s;
+        animation-name: slide-right;
+    }
+
+    .music-content-container {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        align-items: center;
+        max-width: 70vw;
+    }
+
+    .content-container-header {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h0);
+        margin-bottom: 5vh;
+    }
+
+    .leisure-content {
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .viola-leisure-content {
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        padding-bottom: 5vh;
+    }
+
+    .tennis-leisure-content {
+        font-size: var(--font-size-h2);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        padding-bottom: 5vh;
+    }
+
+    .leisure-content-h3 {
+        font-size: var(--font-size-h3);
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+    }
+
+    .video-width {
+        width: 50vw;
+    }
+
+    .running-image {
+        width: 60vw;
+        margin-bottom: 2vh;
+    }
+
+    .video-caption {
+        font-size: var(--font-size-h4);
+        font-style: italic;
+        color: var(--color-basic-secondary);
+
+    }
+
+    .vid {
+        margin-bottom: 4vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery-image {
+        width: 20vw;
+        margin: 1vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .gallery-image {
+        width: 60vw;
+        margin: 2vw;
+    }
+}
+
+.m-leisure-content-h3 {
+    font-size: var(--font-size-h3);
+    text-align: center;
+    color: var(--color-basic-secondary);
+    font-family: 'Nunito';
+}
+
+.italic {
+    font-style: italic;
+}
+
+.content-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-content {
+    width: 50vw;
+}
+
+.carousel-container {
+    width: 50vw;
+    margin-left: calc(5px + 0.5vw);
+    margin-right: calc(5px + 1.5vw);
+}
+
+.linked-content {
+    color: var(--color-basic-secondary);
+}
+
+.music-carousel {
+    text-align: center;
+    width: 30vw;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
