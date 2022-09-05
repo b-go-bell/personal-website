@@ -1,0 +1,26 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.experiences {
+    background-color: var(--color-basic-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+@media screen and (min-width: 800px) {
+    .exp-image {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .exp-image {
+        margin: 2vh;
+        width: 80vw;
+    }
+}

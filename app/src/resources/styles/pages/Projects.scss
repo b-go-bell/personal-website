@@ -31,6 +31,15 @@
         justify-content: space-between;
     }
 
+    .hl-description {
+        width: 45vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .r-description {
         width: 40vw;
         display: flex;
@@ -40,7 +49,7 @@
     }
 
     .l-description {
-        width: 40vw;
+        width: 50vw;
         display: flex;
         text-align: left;
         flex-direction: column;
@@ -83,6 +92,14 @@
     }
 
     .h-description {
+        width: 80vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hl-description {
         width: 80vw;
         height: 70vh;
         display: flex;
@@ -145,6 +162,13 @@
     align-items: flex-end;
 }
 
+.e-parallax-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .other-projects {
     background-color: var(--color-basic-primary);
     display: flex;
@@ -184,7 +208,6 @@
     font-size: var(--font-size-h3);
 }
 
-
 .h-project-details {
     color: var(--color-basic-primary);
     font-family: 'Nunito';
@@ -200,6 +223,59 @@
     font-size: var(--font-size-h4);
 }
 
+/////////////////////////
+
+/////////////////////////
+.hl-project-title {
+    color: var(--color);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-right: 8vw;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: var(--font-size-h0);
+    text-align: right;
+}
+
+.hl-project-info {
+    color: var(--color-basic-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 20vh;
+    text-align: right;
+}
+
+.hl-project-descrip {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    font-weight: bold;
+    margin-right: 8vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: var(--font-size-h3);
+    text-align: right;
+}
+
+.hl-project-details {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    margin-right: 8vw;
+    font-size: var(--font-size-h4);
+    text-align: right;
+}
+
+.hl-project-notice {
+    color: var(--color-basic-primary);
+    font-family: 'Nunito';
+    margin-top: 2vh;
+    margin-right: 12vw;
+    margin-bottom: 6vh;
+    font-size: var(--font-size-h4);
+    text-align: right;
+}
 /////////////////////////
 
 .project-info {

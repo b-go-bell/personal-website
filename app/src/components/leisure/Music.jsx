@@ -1,6 +1,5 @@
 import './../../resources/styles/components/leisure/LeisureContent.scss'
 import duet from './../../resources/media/leisure/music/duet2022.mov'
-import quartet from './../../resources/media/leisure/music/quartet2022.mp4'
 import React, { Component, useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import SpotifyWebApi from 'spotify-web-api-js';

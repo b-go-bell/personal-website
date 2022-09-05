@@ -10,7 +10,6 @@ import { useEffect } from 'react';
 
 function Projects() {
 
-    console.log(getComputedStyle(document.documentElement).getPropertyValue('--color'));
     if(localStorage.getItem("--color") != null)
         document.documentElement.style.setProperty("--color", localStorage.getItem("--color"));
     if(localStorage.getItem("--color-primary") != null)
