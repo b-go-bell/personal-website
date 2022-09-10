@@ -25,7 +25,7 @@ function Footer() {
 
 
     return(
-        <div>
+        <div className="big-footer-container">
             <div className="footer-container">
                 <div className="flinks">
                     <div className="flink">

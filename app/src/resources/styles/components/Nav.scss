@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 
+.big-footer-container {
+    background-color: var(--color-primary);
+}
+
+
 @media screen and (min-width: 800px) {
     .nav-container {
         height: calc(8vh + 20px);
@@ -36,7 +41,6 @@
     }
 
     .footer-container {
-
         display: flex;
         justify-content: space-between;
         background-color: var(--color-primary);
