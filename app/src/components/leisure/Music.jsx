@@ -22,7 +22,7 @@ function Music() {
     useEffect(() => {
         fetch("https://personal-website-backend.vercel.app/spotify-api")
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then((data) => {console.log(data.token); setAccessToken(data.token);});
     }, [] )
 
     useEffect(() => {
