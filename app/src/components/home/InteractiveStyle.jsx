@@ -8,17 +8,39 @@ function InteractiveStyle() {
 
     if(localStorage.getItem("--color") != null)
         document.documentElement.style.setProperty("--color", localStorage.getItem("--color"));
+    else {
+        localStorage.setItem("--color", document.documentElement.style.getPropertyValue("--color"));
+    }
+
     if(localStorage.getItem("--color-primary") != null)
         document.documentElement.style.setProperty("--color-primary", localStorage.getItem("--color-primary"));
+    else {
+        localStorage.setItem("--color-primary", document.documentElement.style.getPropertyValue("--color-primary"));
+    }
+
     if(localStorage.getItem("--color-secondary") != null)
         document.documentElement.style.setProperty("--color-secondary", localStorage.getItem("--color-secondary"));
+    else {
+        localStorage.setItem("--color-secondary", document.documentElement.style.getPropertyValue("--color-secondary"));
+    }
+
     if(localStorage.getItem("--color-highlight") != null)
         document.documentElement.style.setProperty("--color-highlight", localStorage.getItem("--color-highlight"));
+    else {
+        localStorage.setItem("--color-highlight", document.documentElement.style.getPropertyValue("--color-highlight"));
+    }
+
     if(localStorage.getItem("--color-basic-primary") != null)
         document.documentElement.style.setProperty("--color-basic-primary", localStorage.getItem("--color-basic-primary"));
+    else {
+        localStorage.setItem("--color-basic-primary", document.documentElement.style.getPropertyValue("--color-basic-primary"));
+    }
+
     if(localStorage.getItem("--color-basic-secondary") != null)
         document.documentElement.style.setProperty("--color-basic-secondary", localStorage.getItem("--color-basic-secondary"));
-
+    else {
+        localStorage.setItem("--color-basic-secondary", document.documentElement.style.getPropertyValue("--color-basic-secondary"));
+    }
 
     if(localStorage.getItem("--font-size-h0") != null)
         document.documentElement.style.setProperty("--font-size-h0", localStorage.getItem("--font-size-h0"));
