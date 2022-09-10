@@ -42,6 +42,9 @@ function InteractiveStyle() {
         localStorage.setItem("--color-basic-secondary", document.documentElement.style.getPropertyValue("--color-basic-secondary"));
     }
 
+    if(localStorage.getItem("color") === null)
+    localStorage.setItem("color", 6);
+
     if(localStorage.getItem("--font-size-h0") != null)
         document.documentElement.style.setProperty("--font-size-h0", localStorage.getItem("--font-size-h0"));
     if(localStorage.getItem("--font-size-h1") != null)

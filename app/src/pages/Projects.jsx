@@ -37,7 +37,13 @@ function Projects() {
     if(localStorage.getItem("--color-basic-secondary") != null)
         document.documentElement.style.setProperty("--color-basic-secondary", localStorage.getItem("--color-basic-secondary"));
 
-    let color = JSON.parse(localStorage.getItem("color"));
+    let color = null;
+    if(JSON.parse(localStorage.getItem("color")) !== null)
+        color = JSON.parse(localStorage.getItem("color"));
+    else
+        color = 6;
+
+
 
     useEffect( () => {
         const root = document.documentElement;
