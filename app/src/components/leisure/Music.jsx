@@ -21,7 +21,9 @@ function Music() {
 
     useEffect(() => {
         fetch("https://personal-website-backend.vercel.app/spotify-api")
-        .then((res) => res.json())
+        .then((res) => {
+            console.log(res);
+            res.json();})
         .then((data) => setAccessToken(data.token));
     }, [] )
 
