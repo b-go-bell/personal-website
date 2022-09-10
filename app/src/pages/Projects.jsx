@@ -1,9 +1,11 @@
 import Nav from './../components/Nav.jsx';
+import Footer from './../components/Footer.jsx';
 import './../resources/styles/pages/Projects.scss';
 import etu from './../resources/media/projects/etu2.png';
 import rfp from './../resources/media/projects/rfp.png';
 import tms from './../resources/media/projects/tms-code.png';
 import cvai from './../resources/media/projects/cvai.gif';
+import asla from './../resources/media/projects/asla.png';
 import { Parallax } from "react-parallax";
 import { useEffect } from 'react';
 
@@ -181,8 +183,36 @@ function Projects() {
                         </div>
                     </div>
                 </div>
+                <br/>
+                <div className="project">
+                    <div>
+                        <img src={asla} className="l-project-image" alt="ASLA"/>
+                    </div>
+                    <div className="r-description">
+                        <div className="project-info">
+                            <div className="r-project-title" id="title3">
+                                Affordable South LA
+                            </div>
+                            <div className="r-project-details">
+                                &emsp;&ensp;Code the Change • spring 2021&emsp;&ensp;
+                            </div>
+                            <div className="r-project-descrip">
+                                CTC worked with the nonprofit ASLA
+                                to create a mobile-friendly website to spread awareness about the southern
+                                California housing crisis and connect residents to beneficial resources, including other
+                                struggling residents.
+                            </div>
+                            <div className="r-project-descrip">
+                                The web app was built with React, HTML, CSS, and Node, with an additional
+                                Google Analytics Feature.
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="bottom" />
             </div>
+            <br/>
+            <Footer/>
         </div>
     );
 

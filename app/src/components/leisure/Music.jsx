@@ -1,9 +1,8 @@
 import './../../resources/styles/components/leisure/LeisureContent.scss'
 import duet from './../../resources/media/leisure/music/duet2022.mov'
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import SpotifyWebApi from 'spotify-web-api-js';
-import axios, { Axios } from 'axios';
 
 function Music() {
 
@@ -44,7 +43,7 @@ function Music() {
         let currentIndex = array.length,  randomIndex;
 
         // While there remain elements to shuffle.
-        while (currentIndex != 0) {
+        while (currentIndex !== 0) {
 
           // Pick a remaining element.
           randomIndex = Math.floor(Math.random() * currentIndex);
@@ -63,7 +62,7 @@ function Music() {
         console.log(song)
         return(
             <div className="music-carousel-content">
-                <img src={song.track.album.images[0].url}/>
+                <img src={song.track.album.images[0].url} alt="highlighted song album cover"/>
             </div>
         )
     }

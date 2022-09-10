@@ -1,5 +1,4 @@
 import './../../resources/styles/components/home/Crossword.scss'
-import arrow from './../../resources/media/home/arrow.png'
 import { useState, useEffect } from 'react';
 function Crossword() {
     const [ bInput, setBInput ] = useState('');
@@ -25,6 +24,28 @@ function Crossword() {
             setFocusWord(focus);
         }
     }
+
+    if(localStorage.getItem("--color") != null)
+        document.documentElement.style.setProperty("--color", localStorage.getItem("--color"));
+    if(localStorage.getItem("--color-primary") != null)
+        document.documentElement.style.setProperty("--color-primary", localStorage.getItem("--color-primary"));
+    if(localStorage.getItem("--color-secondary") != null)
+        document.documentElement.style.setProperty("--color-secondary", localStorage.getItem("--color-secondary"));
+    if(localStorage.getItem("--color-highlight") != null)
+        document.documentElement.style.setProperty("--color-highlight", localStorage.getItem("--color-highlight"));
+
+    if(localStorage.getItem("--font-size-h1") != null)
+        document.documentElement.style.setProperty("--font-size-h1", localStorage.getItem("--font-size-h1"));
+    if(localStorage.getItem("--font-size-h2") != null)
+        document.documentElement.style.setProperty("--font-size-h2", localStorage.getItem("--font-size-h2"));
+    if(localStorage.getItem("--font-size-h3") != null)
+        document.documentElement.style.setProperty("--font-size-h3", localStorage.getItem("--font-size-h3"));
+    if(localStorage.getItem("--font-size-h4") != null)
+        document.documentElement.style.setProperty("--font-size-h4", localStorage.getItem("--font-size-h4"));
+    if(localStorage.getItem("--font-size-body") != null)
+        document.documentElement.style.setProperty("--font-size-body", localStorage.getItem("--font-size-body"));
+
+
 
     function change(character, inp, setInp, forwardLocArr) {
         // setting up the value of the squares
@@ -101,15 +122,15 @@ function Crossword() {
 
     function colorFirst() {
         if(firstHint()){
-            document.getElementById("hint1").style.color = "#00997B";
+            document.getElementById("hint1").style.color = "var(--color)";
 
-            document.getElementById("b").style.color = "#00997B";
-            document.getElementById("firstR").style.color = "#00997B";
-            document.getElementById("i").style.color = "#00997B";
-            document.getElementById("d").style.color = "#00997B";
-            document.getElementById("firstG").style.color = "#00997B";
-            document.getElementById("firstE").style.color = "#00997B";
-            document.getElementById("t").style.color = "#00997B";
+            document.getElementById("b").style.color = "var(--color)";
+            document.getElementById("firstR").style.color = "var(--color)";
+            document.getElementById("i").style.color = "var(--color)";
+            document.getElementById("d").style.color = "var(--color)";
+            document.getElementById("firstG").style.color = "var(--color)";
+            document.getElementById("firstE").style.color = "var(--color)";
+            document.getElementById("t").style.color = "var(--color)";
           }
         else{
             document.getElementById("hint1").style.color = "#000000";
@@ -126,14 +147,14 @@ function Crossword() {
 
     function colorMiddle() {
         if(middleHint()){
-            document.getElementById("hint2").style.color = "#00997B";
+            document.getElementById("hint2").style.color = "var(--color)";
 
-            document.getElementById("middleG").style.color = "#00997B";
-            document.getElementById("O1").style.color = "#00997B";
-            document.getElementById("middleR").style.color = "#00997B";
-            document.getElementById("d").style.color = "#00997B";
-            document.getElementById("O2").style.color = "#00997B";
-            document.getElementById("n").style.color = "#00997B";
+            document.getElementById("middleG").style.color = "var(--color)";
+            document.getElementById("O1").style.color = "var(--color)";
+            document.getElementById("middleR").style.color = "var(--color)";
+            document.getElementById("d").style.color = "var(--color)";
+            document.getElementById("O2").style.color = "var(--color)";
+            document.getElementById("n").style.color = "var(--color)";
         } else {
             document.getElementById("hint2").style.color = "#000000";
 
@@ -148,12 +169,12 @@ function Crossword() {
 
     function colorLast() {
         if(lastHint()){
-            document.getElementById("hint3").style.color = "#00997B";
+            document.getElementById("hint3").style.color = "var(--color)";
 
-            document.getElementById("b").style.color = "#00997B";
-            document.getElementById("lastE").style.color = "#00997B";
-            document.getElementById("L1").style.color = "#00997B";
-            document.getElementById("L2").style.color = "#00997B";
+            document.getElementById("b").style.color = "var(--color)";
+            document.getElementById("lastE").style.color = "var(--color)";
+            document.getElementById("L1").style.color = "var(--color)";
+            document.getElementById("L2").style.color = "var(--color)";
         }
         else {
             document.getElementById("hint3").style.color = "#000000";
@@ -179,14 +200,14 @@ function Crossword() {
 
         //check overlap squares: b and g
         if(firstHint() || lastHint()){
-            document.getElementById("b").style.color = "#00997B";
+            document.getElementById("b").style.color = "var(--color)";
         }
         else {
             document.getElementById("b").style.color = "#000000";
         }
 
         if(firstHint() || middleHint()){
-            document.getElementById("d").style.color = "#00997B";
+            document.getElementById("d").style.color = "var(--color)";
         }
         else {
             document.getElementById("d").style.color = "#000000";
@@ -282,22 +303,24 @@ function Crossword() {
                     ACROSS
                 </p>
                 <p className="hint" id="hint1" onClick={() => {setFocusWord(0); document.getElementById("b").click(); document.getElementById("b").focus();}}>
-                    &emsp;1. Jones with a diary
+                    <div className="text-color">
+                        &emsp;1. Jones with a diary
+                    </div>
                 </p>
                 <br/>
                 <p className="hintLabel">
                     DOWN
                 </p>
                 <p className="hint" id="hint3" onClick={() => {setFocusWord(2); document.getElementById("b").click(); document.getElementById("b").focus();}}>
-                    &emsp;1. Mexican fast food chain
+                    <div className="text-color">
+                        &emsp;1. Mexican fast food chain
+                    </div>
                 </p>
                 <p className="hint"  id="hint2" onClick={() => {setFocusWord(1); document.getElementById("middleG").click(); document.getElementById("middleG").focus();}}>
-                    &emsp;2. 'idiot sandwich' chef
+                    <div className="text-color">
+                        &emsp;2. 'idiot sandwich' chef
+                    </div>
                 </p>
-            </div>
-            <img src={arrow}  className="arrow"/>
-            <div className="play">
-                fill me in !
             </div>
         </div>
     );

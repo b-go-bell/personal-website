@@ -1,38 +1,13 @@
 import './../resources/styles/pages/Home.scss';
 import Nav from './../components/Nav.jsx';
+import Footer from './../components/Footer.jsx';
 import InteractiveStyle from './../components/home/InteractiveStyle.jsx';
-import { useState } from 'react';
-
-import mail from './../resources/media/home/mail-outline.jpg';
-import email from './../resources/media/home/email.png';
-import linkedin from './../resources/media/home/linkedin-outline.png';
-import elinkedin from './../resources/media/home/elinkedin.png';
-import github from './../resources/media/home/github-outline.png';
-import egithub from './../resources/media/home/egithub.png';
+import Crossword from './../components/home/Crossword.jsx';
+import personal from './../resources/media/home/me.png';
+import ctc from './../resources/media/home/rfphome.JPG';
+import website from './../resources/media/home/website.png';
 
 function Home() {
-
-  function hover(id) {
-    //if(id === 'mail')
-      document.getElementById(id).src = email;
-    if(id === 'github')
-      document.getElementById(id).src = egithub;
-    if(id === 'linkedin')
-      document.getElementById(id).src = elinkedin;
-  }
-
-  function unhover(id) {
-    if(id === 'mail')
-      document.getElementById(id).src = mail;
-    if(id === 'github')
-      document.getElementById(id).src = github;
-    if(id === 'linkedin')
-      document.getElementById(id).src = linkedin;
-  }
-
-  const duration = 300;
-  const [showButton, setShowButton] = useState(true);
-  const [showMessage, setShowMessage] = useState(false);
 
   if(localStorage.getItem("--color") != null)
     document.documentElement.style.setProperty("--color", localStorage.getItem("--color"));
@@ -76,6 +51,67 @@ function Home() {
             <InteractiveStyle/>
           </div>
       </div>
+      <br/>
+      <div className="home-content">
+          <img src={personal} className="personal-image" alt="collage of me"/>
+          <div className="introduction-r">
+            <div className="header-home">about—</div>
+            <br/>
+            <br/>
+            While I'm from Boulder, Colorado, you'll usually find me in
+            Los Angeles at University of Southern California; this semester,
+            however, I took my studies abroad to University of Galway,
+            in Ireland.
+            <br/>
+            <br/>
+            I'm interested in technological sustainability, especially what that means
+            socially. I like to build things that I think are cool, which for me means
+            that they are intuitive, interactive, and intriguing.
+            <br/>
+            <br/>
+            My hope is that this website actively imparts these interests, but I
+            believe the most active way you can learn about someone is meeting them, so reach out!
+          </div>
+      </div>
+      <div className="home-bottom"/>
+      <div className="home-flex">
+        <div className="introduction-l">
+          <a className="header-home" href="/experience">experience—</a>
+          <br/>
+          <br/>
+          From big tech to nonprofits, I've worked with a surprising variety of companies
+          and paradigms the short time I've been active in the professional software world.
+        </div>
+        <img src={ctc} className="ctc-image" alt="CTC volunteering"/>
+      </div>
+      <div className="home-bottom"/>
+      <div className="home-flex">
+        <img src={website} className="personal-image" alt="personal website project"/>
+        <div className="introduction-r">
+          <a className="header-home" href="/projects">projects—</a>
+          <br/>
+          <br/>
+          Documentation is  one of my biggest pain-points (and thus one of
+          my biggest goals for improvment). However, just because something isn't
+          perfect, doesn't mean we shouldn't share it, so I wanted to include some
+          (bits) of projects I'm especially proud of.
+        </div>
+      </div>
+      <div className="home-bottom"/>
+      <div className="home-flex">
+        <div className="introduction-l">
+          <a className="header-home" href="/leisure">leisure—</a>
+          <br/>
+          <br/>
+          I struggled putting together sections for my leisure section because there's
+          so many things that I enjoy doing, but the few I did include I felt were relevant
+          enough to be written about. An honorable mention goes to puzzles, which doesn't have its
+          own page, but is recognized here.
+        </div>
+        <Crossword/>
+      </div>
+      <div className="home-bottom"/>
+      <Footer/>
     </div>
   );
 }

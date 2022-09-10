@@ -19,8 +19,6 @@
     .etu {
         width:90vh;
         height:100vh;
-        animation-duration: 2s;
-        animation-name: slideup;
     }
 
     .h-description {
@@ -67,6 +65,8 @@
 
     .l-project-image {
         width: 50vw;
+        animation: slidein;
+        animation-duration: 2s;
     }
 
     .r-project-image {
@@ -87,8 +87,6 @@
         padding-top: 10vh;
         width: 90vw;
         height: 100vh;
-        animation-duration: 2s;
-        animation-name: slideup;
     }
 
     .h-description {
@@ -144,13 +142,13 @@
     }
 }
 
-@keyframes slideup {
+@keyframes slidein {
     0% {
-      transform: translateX(100%);
+      transform: translateX(-100%);
       opacity: 0;
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(0%);
       opacity: 1;
     }
   }
@@ -325,7 +323,7 @@
     margin-top: 4vh;
     margin-right: 7vw;
     margin-bottom: 2vh;
-    font-size: calc(24px + 0.8vw);
+    font-size: var(--font-size-h1);
 }
 
 .l-project-descrip {
@@ -333,19 +331,20 @@
     font-family: 'Nunito';
     margin-right: 7vw;
     margin-top: 3vh;
-    font-size: calc(10px + 0.4vw);
+    font-size: var(--font-size-h4);
 }
 
 .l-project-details {
     color: var(--color-basic-secondary);
     margin-right: 7vw;
     font-family: 'Nunito';
-    font-size: calc(10px + 0.3vw);
+    font-size: var(--font-size-body);
 }
 
 //////////////////////////
 
 .bottom {
     height: 15vh;
+    background-color: var(--color-basic-primary);
 }
 

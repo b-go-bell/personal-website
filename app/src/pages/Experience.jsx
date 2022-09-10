@@ -1,11 +1,15 @@
 import './../resources/styles/pages/Experience.scss';
 import './../resources/styles/pages/Projects.scss';
 import Nav from './../components/Nav.jsx';
+import Footer from './../components/Footer.jsx';
 import intel from './../resources/media/experience/intel_new_logo.jpg';
 import ia from './../resources/media/experience/ia.JPG';
 import viterbi from './../resources/media/experience/viterbi.png';
 import heatmap from './../resources/media/experience/heatmap.png';
 import anark from './../resources/media/experience/AnarkLogo.jpg';
+import ctc from './../resources/media/experience/ctc.JPEG';
+
+import { useEffect } from 'react';
 
 function Experience() {
 
@@ -17,6 +21,7 @@ function Experience() {
         document.documentElement.style.setProperty("--color-secondary", localStorage.getItem("--color-secondary"));
     if(localStorage.getItem("--color-highlight") != null)
         document.documentElement.style.setProperty("--color-highlight", localStorage.getItem("--color-highlight"));
+
     if(localStorage.getItem("--font-size-h1") != null)
         document.documentElement.style.setProperty("--font-size-h1", localStorage.getItem("--font-size-h1"));
     if(localStorage.getItem("--font-size-h2") != null)
@@ -27,11 +32,68 @@ function Experience() {
         document.documentElement.style.setProperty("--font-size-h4", localStorage.getItem("--font-size-h4"));
     if(localStorage.getItem("--font-size-body") != null)
         document.documentElement.style.setProperty("--font-size-body", localStorage.getItem("--font-size-body"));
+
     if(localStorage.getItem("--color-basic-primary") != null)
         document.documentElement.style.setProperty("--color-basic-primary", localStorage.getItem("--color-basic-primary"));
     if(localStorage.getItem("--color-basic-secondary") != null)
         document.documentElement.style.setProperty("--color-basic-secondary", localStorage.getItem("--color-basic-secondary"));
 
+    let color = JSON.parse(localStorage.getItem("color"));
+
+    useEffect( () => {
+        const root = document.documentElement;
+        if(color % 2 === 0){
+            root?.style.setProperty("--color-basic-primary", "#ffffff");
+            localStorage.setItem("--color-basic-primary", "#ffffff");
+
+            root?.style.setProperty("--color-basic-secondary", "#000000");
+            localStorage.setItem("--color-basic-secondary", "#000000");
+
+            document.getElementById("title1").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title2").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title3").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title4").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title5").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+
+
+            if(color === 6){
+                root?.style.setProperty("--color-basic-primary", "#ffffff");
+                localStorage.setItem("--color-basic-primary", "#ffffff");
+
+                root?.style.setProperty("--color-basic-secondary", "#202A44");
+                localStorage.setItem("--color-basic-secondary", "#202A44");
+            }
+
+        } else {
+            root?.style.setProperty("--color-basic-primary", "#000000");
+            localStorage.setItem("--color-basic-primary", "#000000");
+
+            root?.style.setProperty("--color-basic-secondary", "#ffffff");
+            localStorage.setItem("--color-basic-secondary", "#ffffff");
+
+            document.getElementById("title1").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title2").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title3").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title4").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title5").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title6").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+
+            if(color === 7){
+                root?.style.setProperty("--color-basic-primary", "#202A44");
+                localStorage.setItem("--color-basic-primary", "#202A44");
+
+                root?.style.setProperty("--color-basic-secondary", "#ffffff");
+                localStorage.setItem("--color-basic-secondary", "#ffffff");
+
+                document.getElementById("title1").style.color = "#ffffff";
+                document.getElementById("title2").style.color = "#ffffff";
+                document.getElementById("title3").style.color = "#ffffff";
+                document.getElementById("title4").style.color = "#ffffff";
+                document.getElementById("title5").style.color = "#ffffff";
+                document.getElementById("title6").style.color = "#ffffff";
+            }
+        }
+    }, [color]);
 
     return(
         <div className="experience-container">
@@ -43,7 +105,7 @@ function Experience() {
                             Intel Corporation
                         </div>
                         <div className="l-project-details">
-                            &emsp;&ensp;software application + engineer intern • summer 2023 + 2022&emsp;&ensp;
+                            &emsp;&ensp;software engineer intern • summer 2022&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
                             As a software engineer intern for Intel's TD ATA MES Backend team, I gained
@@ -64,9 +126,11 @@ function Experience() {
                     </div>
                 </div>
                 <br/>
+                <br/>
+                <br/>
                 <div className="project">
                     <div className="project-info">
-                        <div className="l-project-title" id="title1">
+                        <div className="l-project-title" id="title2">
                             ICAROS Lab
                         </div>
                         <div className="l-project-details">
@@ -75,7 +139,7 @@ function Experience() {
                         <div className="l-project-descrip">
                             Immediately loving CSCI 360: Introduction to Artificial Intelligence, I
                             pestered one of the class TA's to let me help out with his work in the
-                            Interactive and Collaborative Autonomous Robotics lab.
+                            Interactive and Collaborative Autonomous Robotics lab until it happened.
                         </div>
                         <div className="l-project-descrip">
                             Being in the lab for just a single semester before the schoolyear ended,
@@ -89,9 +153,37 @@ function Experience() {
                     </div>
                 </div>
                 <br/>
+                <br/>
+                <br/>
                 <div className="project">
                     <div className="project-info">
-                        <div className="l-project-title" id="title1">
+                        <div className="l-project-title" id="title3">
+                            Code the Change
+                        </div>
+                        <div className="l-project-details">
+                            &emsp;&ensp;developer + vp of community outreach • 2020-2022&emsp;&ensp;
+                        </div>
+                        <div className="l-project-descrip">
+                            CTC was the first way I made friends as a freshman attending school online due to the
+                            pandemic. I've been a frontend developer for Code the Change for 2 years now,
+                            and was the vice president of community outreach last year.
+                        </div>
+                        <div className="l-project-descrip">
+                            The community outreach executive board position was a new role that I helped
+                            kickstart in its first year that focuses on the club's philanthropic
+                            commitments and comprehensive community impact.
+                        </div>
+                    </div>
+                    <div>
+                        <img src={ctc} className="exp-image" alt="Intel logo"/>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <div className="project">
+                    <div className="project-info">
+                        <div className="l-project-title" id="title4">
                             USC CSCI 103
                         </div>
                         <div className="l-project-details">
@@ -113,9 +205,11 @@ function Experience() {
                     </div>
                 </div>
                 <br/>
+                <br/>
+                <br/>
                 <div className="project">
                     <div className="project-info">
-                        <div className="l-project-title" id="title1">
+                        <div className="l-project-title" id="title5">
                             Internet Archive
                         </div>
                         <div className="l-project-details">
@@ -141,9 +235,11 @@ function Experience() {
                     </div>
                 </div>
                 <br/>
+                <br/>
+                <br/>
                 <div className="project">
                     <div className="project-info">
-                        <div className="l-project-title" id="title1">
+                        <div className="l-project-title" id="title6">
                             Anark Corporation
                         </div>
                         <div className="l-project-details">
@@ -165,6 +261,8 @@ function Experience() {
                 </div>
                 <div className="bottom" />
             </div>
+            <br/>
+            <Footer/>
         </div>
     );
 }

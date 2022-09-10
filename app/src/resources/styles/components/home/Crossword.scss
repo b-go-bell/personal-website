@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 .crossword-container {
-    width: calc(24vw + 24vh);
-    height: calc(24vw + 24vh);
+    width: calc(30vw + 30vh);
+    height: calc(30vw + 30vh);
     display: grid;
     grid-template-columns: repeat(9, 12%);
     grid-template-rows: repeat(9, 12%);
@@ -16,41 +16,45 @@
     grid-column-end: 10;
     grid-row-start: 6;
     grid-row-end: 10;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito';
+    color: var(--color-secondary);
 }
 
 .hintLabel {
-    font-size: calc(9px + 0.5vw);
+    font-size: var(--font-size-h3);
     padding: 0;
     padding-left: 3vw;
     margin: 0;
+    color: var(--color-secondary);
 }
 
 .hint {
-    font-size: calc(8px + 0.5vw);
+    font-size: var(--font-size-h4);
     padding: 0;
     margin: 6px;
     padding-left: 3vw;
     cursor: pointer;
-
+    color: var(--color-secondary);
 }
 
 .hint1 {
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito';
     font-size: 12px;
     grid-column: 1/1;
     grid-row: 4/4;
     padding: 4px;
     background-color: transparent;
+    color: var(--color);
 }
 
 .hint2 {
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito';
     font-size: 12px;
     grid-column: 4/4;
     grid-row: 1/1;
     padding: 4px;
     background-color: transparent;
+    color: var(--color);
 }
 
 @media screen and (min-width: 800px) {
@@ -111,7 +115,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -126,7 +130,7 @@
     border-bottom: 1px solid black;
     border-left: none;
     border-right: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     font-family: 'Architects Daughter';
     padding-bottom: 5px;
@@ -139,7 +143,7 @@
     grid-row-end: 5;
     border: 1px solid black;
     border-right: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     font-family: 'Architects Daughter';
     padding-bottom: 5px;
@@ -151,7 +155,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -165,7 +169,7 @@
     border: 1px solid black;
     border-left: none;
     border-right: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     font-family: 'Architects Daughter';
     padding-bottom: 5px;
@@ -178,7 +182,7 @@
     grid-row-end: 5;
     border: 1px solid black;
     border-right: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -190,7 +194,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -204,7 +208,7 @@
     border: 1px solid black;
     border-top: none;
     border-bottom: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -217,7 +221,7 @@
     grid-row-end: 7;
     border: 1px solid black;
     border-bottom: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -229,7 +233,7 @@
     grid-row-start: 7;
     grid-row-end: 8;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -241,7 +245,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -255,7 +259,7 @@
     border: 1px solid black;
     border-top: none;
     border-bottom: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -268,7 +272,7 @@
     grid-row-end: 4;
     border: 1px solid black;
     border-bottom: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -282,7 +286,7 @@
     border: 1px solid black;
     border-top: none;
     border-bottom: none;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
@@ -294,9 +298,13 @@
     grid-row-start: 6;
     grid-row-end: 7;
     border: 1px solid black;
-    font-size: calc(12px + 2vw);
+    font-size: var(--font-size-h0);
     text-align: center;
     padding-bottom: 5px;
     font-family: 'Architects Daughter';
+}
+
+.text-color {
+    color: var(--color-secondary);
 }
 

@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import Nav from './../components/Nav.jsx';
+import Footer from './../components/Footer.jsx';
 import Sidebar from './../components/leisure/Sidebar.jsx';
 import LeisureContent from './../components/leisure/LeisureContent.jsx';
 import './../resources/styles/pages/Leisure.scss';
@@ -19,6 +20,10 @@ function Leisure() {
                 <Sidebar handleClick={item => setClicked(item)}/>
                 <LeisureContent content={clicked}/>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <Footer/>
         </div>
     );
 }

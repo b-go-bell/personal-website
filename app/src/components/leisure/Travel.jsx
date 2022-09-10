@@ -35,15 +35,13 @@ function Travel() {
                 here we are with "travel."
                 <br/>
                 <br/>
-                When I say travel, I don't so much mean going to cool new places—although that's
-                certainly a part of it—I mean something more along the lines of learning new things
-                (you can  see how "learning new things" isn't a great section header, either).
+                When I say travel, I don't so much mean going to cool new places <span className="italic">(although that's
+                certainly a part of it)</span> I mean something more along the lines of learning new things.
                 You can travel to a different time by picking up a book, and travel to a new place with the magic
-                of Google Earth <span className="italic">
-                    (Google Earth creators if you're reading this- ily). </span>
+                of Google Earth.
                 <br/>
                 <br />
-                So I thought I'd share this love of travel-exploring-photography-learning-new-things with you here!
+                So I thought I'd share this love of travel-exploring-photography-learning-new-things with you here.
                 I have intentionally organized the sections down below by location, but in my mind the concept of
                 "place" is a very fluid one.
             </div>
@@ -52,24 +50,24 @@ function Travel() {
                 big sur—
             </div>
             <div className="gallery">
-                <img className="gallery-image" src={bigsur2}/>
-                <img className="gallery-image" src={bigsur1}/>
-                <img className="gallery-image" src={bigsur3}/>
-                <img className="gallery-image" src={bigsur4}/>
-                <img className="gallery-image" src={bigsur5}/>
-                <img className="gallery-image" src={bigsur6}/>
+                <img className="gallery-image" src={bigsur2} alt="big sur grocery store"/>
+                <img className="gallery-image" src={bigsur1} alt="big sur coast line"/>
+                <img className="gallery-image" src={bigsur3} alt="big sur bridge"/>
+                <img className="gallery-image" src={bigsur4} alt="big sur coastline"/>
+                <img className="gallery-image" src={bigsur5} alt="big sur ocean"/>
+                <img className="gallery-image" src={bigsur6} alt="big sur vegetation"/>
             </div>
             <br/>
             <div className="content-container-header">
                 boulder county—
             </div>
             <div className="gallery">
-                <img className="gallery-image" src={boco1}/>
-                <img className="gallery-image" src={boco2}/>
-                <img className="gallery-image" src={boco3}/>
-                <img className="gallery-image" src={boco5}/>
-                <img className="gallery-image" src={boco6}/>
-                <img className="gallery-image" src={boco4}/>
+                <img className="gallery-image" src={boco1} alt="boulder flatirons"/>
+                <img className="gallery-image" src={boco2} alt="boulder sunset"/>
+                <img className="gallery-image" src={boco3} alt="boulder hike"/>
+                <img className="gallery-image" src={boco5} alt="boulder garden"/>
+                <img className="gallery-image" src={boco6} alt="boulder cat"/>
+                <img className="gallery-image" src={boco4} alt="boulder horses"/>
             </div>
             <br/>
             <div className="content-container-header">
@@ -83,24 +81,24 @@ function Travel() {
                 san francisco—
             </div>
             <div className="gallery">
-                <img className="gallery-image" src={sf4}/>
-                <img className="gallery-image" src={sf2}/>
-                <img className="gallery-image" src={sf1}/>
-                <img className="gallery-image" src={sf5}/>
-                <img className="gallery-image" src={sf6}/>
-                <img className="gallery-image" src={sf3}/>
+                <img className="gallery-image" src={sf4} alt="san francsico street"/>
+                <img className="gallery-image" src={sf2} alt="san francsico at night"/>
+                <img className="gallery-image" src={sf1} alt="san francsico hotel"/>
+                <img className="gallery-image" src={sf5} alt="san francsico bay bridge"/>
+                <img className="gallery-image" src={sf6} alt="san francsico coit tower"/>
+                <img className="gallery-image" src={sf3} alt="san francsico mirror pic"/>
             </div>
             <br/>
             <div className="content-container-header">
                 so cal—
             </div>
             <div className="gallery">
-                <img className="gallery-image" src={socal4}/>
-                <img className="gallery-image" src={socal3}/>
-                <img className="gallery-image" src={socal6}/>
-                <img className="gallery-image" src={socal1}/>
-                <img className="gallery-image" src={socal2}/>
-                <img className="gallery-image" src={socal5}/>
+                <img className="gallery-image" src={socal4} alt="southern california sunset"/>
+                <img className="gallery-image" src={socal3} alt="southern california gas station"/>
+                <img className="gallery-image" src={socal6} alt="southern california usc campus"/>
+                <img className="gallery-image" src={socal1} alt="southern california beach picnic"/>
+                <img className="gallery-image" src={socal2} alt="southern california usc campus- doheny library"/>
+                <img className="gallery-image" src={socal5} alt="southern california beach sunset"/>
             </div>
             <br/>
         </div>
