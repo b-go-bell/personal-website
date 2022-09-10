@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "spotify.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "spotify.js"
+        }
+      ]
+}

@@ -33,9 +33,7 @@
 
  app.use(express.static(path.resolve(__dirname, '../../../app'))).use(cors());
 
- app.listen(3001, () => {
-   console.log(`Server listening on 3001`);
- });
+ app.listen(process.env.PORT || 3000);
 
  app.get("/spotify-api", (req, res) => {
 

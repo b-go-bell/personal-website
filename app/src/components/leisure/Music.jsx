@@ -20,7 +20,7 @@ function Music() {
     }
 
     useEffect(() => {
-        fetch("http://localhost:3001/spotify-api")
+        fetch("https://personal-website-backend.vercel.app/spotify-api")
         .then((res) => res.json())
         .then((data) => setAccessToken(data.token));
     }, [] )
