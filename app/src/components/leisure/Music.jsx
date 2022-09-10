@@ -127,8 +127,7 @@ function Music() {
                 <div className="viola-leisure-content">
                     I almost always have music playing. I cycle in and out of songs, artists, and genres (which
                     unfortuantely makes for a very messy Spotify), but no matter what the state of my other playlists
-                    are, I always try to keep my "favorites" playlist up-to-date with all my favorite
-                    songs, no matter how well the songs in said playlist sound together.
+                    are, I always try to keep my "favorites" playlist up-to-date.
                     <br/>
                     <br/>
                     I thought it would be fun and insightful for people to get a taste of this playlist, so I included the

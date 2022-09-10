@@ -142,7 +142,7 @@ function Experience() {
                             Interactive and Collaborative Autonomous Robotics lab until it happened.
                         </div>
                         <div className="l-project-descrip">
-                            Being in the lab for just a single semester before the schoolyear ended,
+                            Being in the lab for just a single semester before the school year ended,
                             I worked on creating my own implementation of MAP-Elites, a Quality Diversity algorithm
                             that generates morphologically diverse, optimal solutions within a multi-dimensional
                             problem space.
