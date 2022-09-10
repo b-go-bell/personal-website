@@ -103,7 +103,7 @@ function Home() {
           <a className="header-home" href="/leisure">leisure—</a>
           <br/>
           <br/>
-          I struggled putting together sections for my leisure section because there's
+          I struggled putting together sections for my leisure section because there are
           so many things that I enjoy doing, but the few I did include I felt were relevant
           enough to be written about. An honorable mention goes to puzzles, which doesn't have its
           own page, but is recognized here.
