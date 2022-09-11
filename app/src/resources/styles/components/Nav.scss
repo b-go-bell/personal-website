@@ -209,7 +209,7 @@
         font-family: 'Nunito';
         color: var(--color-secondary);
         text-decoration: none;
-        font-size: var(--font-size-h3);
+        font-size: calc(14px + 0.2vw);
     }
 
     .flink-style {
@@ -222,7 +222,7 @@
         font-family: 'Nunito';
         color: var(--color-secondary);
         text-decoration: none;
-        font-size: var(--font-size-h4);
+        font-size: calc(12px + 0.2vw);;
         padding: calc(0.25vw + 0.25vh);
         padding-left: 1.5vw;
         cursor: pointer;
@@ -233,7 +233,7 @@
         font-family: 'Nunito';
         color: var(--color-secondary);
         text-decoration: none;
-        font-size: var(--font-size-h4);
+        font-size: calc(12px + 0.2vw);
         padding: calc(0.25vw + 0.25vh);
         padding-left: 1.5vw;
     }

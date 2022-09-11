@@ -324,7 +324,7 @@ function Crossword() {
                 </p>
                 <p className="hint" id="hint1" onClick={() => {setFocusWord(0); document.getElementById("b").click(); document.getElementById("b").focus();}}>
                     <div className="text-color">
-                        &emsp;1. Jones with a diary
+                        &emsp;1. Jones' Diary
                     </div>
                 </p>
             </div>
