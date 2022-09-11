@@ -40,6 +40,8 @@
         overflow-x: visible;
         margin-top: 10vh;
         padding-left: 14vw;
+        -webkit-appearance: none;
+        appearance: none;
     }
 }
 
@@ -53,7 +55,7 @@
 }
 
 .hintLabel {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     padding: 0;
     padding-left: 3vw;
     margin: 0;
@@ -61,7 +63,7 @@
 }
 
 .hint {
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-body);
     padding: 0;
     margin: 6px;
     padding-left: 3vw;
