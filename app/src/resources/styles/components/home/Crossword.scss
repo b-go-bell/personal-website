@@ -47,20 +47,6 @@
         border-radius: 0px;
     }
 
-    .row-text-box {
-        width: 6vw;
-        height: 6vw;
-        padding: 0;
-        background-color: white;
-        border-top: 2px solid black;
-        border-left: 1px solid black;
-        border-bottom: 2px solid black;
-        border-right: 1px solid black;
-        font-size: var(--font-size-h0);
-        text-align: center;
-        font-family: 'Architects Daughter';
-    }
-
     .hint-box {
         width: 22vw;
         height: 6vw;
@@ -132,7 +118,7 @@
 @media screen and (max-width: 600px) {
 
     .crossword-container {
-        width: calc(80vw);
+        width: calc(90vw);
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
@@ -172,10 +158,11 @@
         font-size: var(--font-size-h0);
         text-align: center;
         font-family: 'Architects Daughter';
+        border-radius: 0px;
     }
 
     .hint-box {
-        width: 35vw;
+        width: 40vw;
         height: 6vw;
         font-family: 'Nunito';
         color: var(--color-secondary);
