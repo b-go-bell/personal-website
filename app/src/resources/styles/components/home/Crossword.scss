@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .crossword-container {
         width: calc(80vw);
@@ -43,7 +43,6 @@
         -webkit-appearance: none;
         appearance: none;
     }
-}
 
 .hints {
     grid-column-start: 5;
@@ -55,7 +54,7 @@
 }
 
 .hintLabel {
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h3);
     padding: 0;
     padding-left: 3vw;
     margin: 0;
@@ -63,7 +62,7 @@
 }
 
 .hint {
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-h4);
     padding: 0;
     margin: 6px;
     padding-left: 3vw;
@@ -114,7 +113,7 @@
     grid-row-end: 5;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    border-left: none;
+    border-left: 1px solid black;
     border-right: none;
     font-size: var(--font-size-h0);
     text-align: center;
@@ -319,5 +318,297 @@
 
 .text-color {
     color: var(--color-secondary);
+}}
+
+@media screen and (max-width: 600px) {
+
+    .crossword-container {
+        width: calc(80vw);
+        height: calc(80vw);
+        display: grid;
+        grid-template-columns: repeat(9, 12%);
+        grid-template-rows: repeat(9, 12%);
+        justify-content: center;
+        overflow-x: visible;
+        margin-top: 10vh;
+        padding-left: 14vw;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+.hints {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 10;
+    font-family: 'Nunito';
+    color: var(--color-secondary);
 }
+
+.hintLabel {
+    font-size: var(--font-size-h4);
+    padding: 0;
+    padding-left: 3vw;
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+.hint {
+    font-size: var(--font-size-body);
+    padding: 0;
+    margin: 6px;
+    padding-left: 3vw;
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+.hint1 {
+    font-family: 'Nunito';
+    font-size: 8px;
+    grid-column: 1/1;
+    grid-row: 4/4;
+    padding: 4px;
+    background-color: transparent;
+    color: var(--color);
+}
+
+.hint2 {
+    font-family: 'Nunito';
+    font-size: 8px;
+    grid-column: 4/4;
+    grid-row: 1/1;
+    padding: 4px;
+    background-color: transparent;
+    color: var(--color);
+}
+
+
+.boxB {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxFirstR {
+    border-radius: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    //padding-bottom: 5px;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxI {
+    border-radius: 0px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    //padding-bottom: 5px;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxD {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxFirstG {
+    border-radius: 0px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    //padding-bottom: 5px;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxFirstE {
+    border-radius: 0px;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxT {
+    border-radius: 0px;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxLastE {
+    border-radius: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxL1 {
+    border-radius: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxL2 {
+    border-radius: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxMiddleG {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxO1 {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxMiddleR {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxO2 {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.boxN {
+    border-radius: 0px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid black;
+    font-size: var(--font-size-h0);
+    text-align: center;
+    //padding-bottom: 5px;
+    font-family: 'Architects Daughter';
+    -webkit-appearance: none;
+    color: black;
+}
+
+.text-color {
+    color: var(--color-secondary);
+}}
 

@@ -98,8 +98,7 @@
         border-color: black;
         min-height: 30px;
         height: 5vh;
-        min-width: 140px;
-        width: 12vw;
+        width: 40vw;
         border-radius: 8px 8px 0px 0px;
     }
 
@@ -263,12 +262,13 @@
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     align-items: center;
+    width: 20vw;
 }
 
 .red-button {
     background-color: #cf0030;
-    width: calc(18px);
-    height: calc(18px);
+    width: calc(24px);
+    height: calc(24px);
     border-radius: 50%;
     border: none;
     margin-top: calc(10px);
@@ -277,8 +277,8 @@
 
 .orange-button {
     background-color: #FFA500;
-    width: calc(18px);
-    height: calc(18px);
+    width: calc(24px);
+    height: calc(24px);
     border-radius: 50%;
     border: none;
     margin-top: calc(10px);
@@ -287,8 +287,8 @@
 
 .green-button {
     background-color: #00AC8A;
-    width: calc(18px);
-    height: calc(18px);
+    width: calc(24px);
+    height: calc(24px);
     border-radius: 50%;
     border: none;
     margin-top: calc(10px);
@@ -297,8 +297,8 @@
 
 .navy-button {
     background-color: #202A44;
-    width: calc(18px);
-    height: calc(18px);
+    width: calc(24px);
+    height: calc(24px);
     border-radius: 50%;
     border: none;
     margin-top: calc(10px);
@@ -307,8 +307,8 @@
 
 .brown-button {
     background-color: #A47449;
-    width: calc(18px);
-    height: calc(18px);
+    width: calc(24px);
+    height: calc(24px);
     border-radius: 50%;
     border: none;
     margin-top: calc(10px);
@@ -328,7 +328,6 @@
     font-family: 'Ubuntu Mono';
     font-size: calc(6px + var(--font-size-h1));
     color: var(--color-highlight1);
-    background-color: purple;
     border: none;
     background: none;
     margin-top: 5px;
