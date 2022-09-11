@@ -171,7 +171,7 @@
         text-decoration: none;
         color: var(--color-secondary);
         font-weight: bold;
-        font-size: var(--font-size-body);
+        font-size: calc(12px + 0.2vw);
     }
 
     .signature:hover {
@@ -179,7 +179,7 @@
         text-decoration: none;
         color: var(--color-highlight);
         font-weight: bold;
-        font-size: var(--font-size-body);
+        font-size: calc(12px + 0.2vw);
     }
 
     .links {
@@ -191,7 +191,7 @@
         font-family: 'Nunito';
         color: var(--color-secondary);
         text-decoration: none;
-        font-size: var(--font-size-body);
+        font-size: calc(12px + 0.2vw);
         margin-left: 1.8vw;
         margin-right: 1.8vw;
 
@@ -242,7 +242,7 @@
         font-family: 'Nunito';
         color: var(--color-highlight);
         text-decoration: none;
-        font-size: var(--font-size-h4);
+        font-size: calc(12px + 0.2vw);
         margin-left: 1.8vw;
         margin-right: 1.8vw;
     }
