@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 
+.crossword-flex-container {
+    display: grid;
+}
+
 @media screen and (min-width: 1000px) {
     .crossword-container {
         width: calc(30vw + 30vh);
         height: calc(30vw + 30vh);
+        max-width: 60vw;
+        max-height: 60vw;
         display: grid;
         grid-template-columns: repeat(9, 12%);
         grid-template-rows: repeat(9, 12%);
@@ -326,7 +332,7 @@
         width: calc(80vw);
         height: calc(80vw);
         display: grid;
-        row-gap: 0px;
+        row-gap: -2px;
         grid-template-columns: repeat(9, 12%);
         grid-template-rows: repeat(9, 12%);
         justify-content: center;
@@ -338,7 +344,7 @@
     }
 
 .hints {
-    grid-column-start: 5;
+    grid-column-start: 6;
     grid-column-end: 10;
     grid-row-start: 6;
     grid-row-end: 10;
