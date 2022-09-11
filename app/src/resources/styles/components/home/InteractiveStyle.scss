@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 600px) {
     .interactive-style-container {
-        width: 50vw;
+        width: 80vw;
         margin-top: 10vh;
         padding-bottom: 10vh;
         display: flex;
@@ -108,9 +108,7 @@
         border: solid;
         border-width: 3px;
         border-color: black;
-        min-height: 350px;
-        height: 30vh;
-        min-width: 400px;
+        width: 80vw;
         border-radius: 0px 8px 8px 8px;
         display: flex;
         padding-top: calc(10px + 0.2vw);
@@ -118,6 +116,132 @@
     }
 }
 
+
+@media screen and (min-width: 600px) {
+    .tab-text {
+        margin-left: calc(3px + 0.7vw);
+        padding-top: calc(3px + 0.7vw);
+        font-family: 'Ubuntu Mono';
+        font-size: var(--font-size-h3);
+        color: var(--color-highlight1);
+    }
+
+    .interactive-sidebar {
+        display: flex;
+        flex-direction: column;
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--color-highlight1);
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+
+    .red-button {
+        background-color: #cf0030;
+        width: calc(12px + 0.5vw + 0.5vh);
+        height: calc(12px + 0.5vw + 0.5vh);
+        border-radius: 50%;
+        border: none;
+        margin: calc(6px + 0.2vw);
+        margin-top: calc(10px + 0.2vw);
+        cursor: pointer;
+    }
+
+    .orange-button {
+        background-color: #FFA500;
+        width: calc(12px + 0.5vw + 0.5vh);
+        height: calc(12px + 0.5vw + 0.5vh);
+        border-radius: 50%;
+        border: none;
+        margin: calc(6px + 0.2vw);
+        margin-top: calc(10px + 0.2vw);
+        cursor: pointer;
+    }
+
+    .green-button {
+        background-color: #00AC8A;
+        width: calc(12px + 0.5vw + 0.5vh);
+        height: calc(12px + 0.5vw + 0.5vh);
+        border-radius: 50%;
+        border: none;
+        margin: calc(6px + 0.2vw);
+        margin-top: calc(10px + 0.2vw);
+        cursor: pointer;
+    }
+
+    .navy-button {
+        background-color: #202A44;
+        width: calc(12px + 0.5vw + 0.5vh);
+        height: calc(12px + 0.5vw + 0.5vh);
+        border-radius: 50%;
+        border: none;
+        margin: calc(6px + 0.2vw);
+        margin-top: calc(10px + 0.2vw);
+        cursor: pointer;
+    }
+
+    .brown-button {
+        background-color: #A47449;
+        width: calc(12px + 0.5vw + 0.5vh);
+        height: calc(12px + 0.5vw + 0.5vh);
+        border-radius: 50%;
+        border: none;
+        margin: calc(6px + 0.2vw);
+        margin-top: calc(10px + 0.2vw);
+        cursor: pointer;
+    }
+
+    .small-text-button {
+        font-family: 'Ubuntu Mono';
+        font-size: calc(6px + var(--font-size-h4));
+        color: var(--color-highlight1);
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .big-text-button {
+        font-family: 'Ubuntu Mono';
+        font-size: calc(6px + var(--font-size-h1));
+        color: var(--color-highlight1);
+        border: none;
+        background: none;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .icon-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dark-mode-icon {
+        width: calc(14px + 0.5vw + 0.5vh);
+        height: calc(14px + 0.5vw + 0.5vh);
+    }
+
+    .codespace {
+        font-family: 'Ubuntu Mono';
+        padding-left: 1vw;
+
+    }
+
+    .code-line {
+        margin: calc(4px + 0.1vw);
+        font-size: var(--font-size-h3);
+        color: var(--color-highlight1);
+    }
+
+    .line-number {
+        color: #808080;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
 .tab-text {
     margin-left: calc(3px + 0.7vw);
@@ -157,7 +281,6 @@
     height: calc(12px + 0.5vw + 0.5vh);
     border-radius: 50%;
     border: none;
-    margin: calc(6px + 0.2vw);
     margin-top: calc(10px + 0.2vw);
     cursor: pointer;
 }
@@ -168,7 +291,6 @@
     height: calc(12px + 0.5vw + 0.5vh);
     border-radius: 50%;
     border: none;
-    margin: calc(6px + 0.2vw);
     margin-top: calc(10px + 0.2vw);
     cursor: pointer;
 }
@@ -179,7 +301,6 @@
     height: calc(12px + 0.5vw + 0.5vh);
     border-radius: 50%;
     border: none;
-    margin: calc(6px + 0.2vw);
     margin-top: calc(10px + 0.2vw);
     cursor: pointer;
 }
@@ -190,7 +311,6 @@
     height: calc(12px + 0.5vw + 0.5vh);
     border-radius: 50%;
     border: none;
-    margin: calc(6px + 0.2vw);
     margin-top: calc(10px + 0.2vw);
     cursor: pointer;
 }
@@ -233,22 +353,11 @@
 
 .code-line {
     margin: calc(4px + 0.1vw);
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     color: var(--color-highlight1);
 }
 
 .line-number {
     color: #808080;
 }
-
-
-@keyframes slideup {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
 }
