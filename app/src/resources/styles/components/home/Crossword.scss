@@ -44,20 +44,7 @@
         font-size: var(--font-size-h0);
         text-align: center;
         font-family: 'Architects Daughter';
-    }
-
-    .d-text-box {
-        width: 6vw;
-        height: 6vw;
-        padding: 0;
-        background-color: white;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
-        font-size: var(--font-size-h0);
-        text-align: center;
-        font-family: 'Architects Daughter';
+        border-radius: 0px;
     }
 
     .row-text-box {
@@ -128,6 +115,7 @@
         font-size: var(--font-size-h0);
         text-align: center;
         font-family: 'Architects Daughter';
+        border-radius: 0px;
     }
 
     .hint-box {
@@ -187,7 +175,7 @@
     }
 
     .hint-box {
-        width: 30vw;
+        width: 35vw;
         height: 6vw;
         font-family: 'Nunito';
         color: var(--color-secondary);
