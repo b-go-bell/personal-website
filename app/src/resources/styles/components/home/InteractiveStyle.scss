@@ -262,6 +262,7 @@
     border-bottom: none;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
+    align-items: center;
 }
 
 .red-button {
@@ -327,6 +328,7 @@
     font-family: 'Ubuntu Mono';
     font-size: calc(6px + var(--font-size-h1));
     color: var(--color-highlight1);
+    background-color: purple;
     border: none;
     background: none;
     margin-top: 5px;
