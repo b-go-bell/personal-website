@@ -3,6 +3,7 @@
 
 .big-footer-container {
     background-color: var(--color-primary);
+    max-width: 100vw;
 }
 
 
@@ -200,7 +201,7 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding-left: 8vw;
+        padding-left: 6vw;
         padding-right: 2vw;
     }
 
@@ -244,6 +245,5 @@
         font-size: var(--font-size-h4);
         margin-left: 1.8vw;
         margin-right: 1.8vw;
-
     }
 }
