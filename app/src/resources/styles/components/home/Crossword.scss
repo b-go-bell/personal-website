@@ -3,613 +3,203 @@
 
 @media screen and (min-width: 1000px) {
     .crossword-container {
-        width: calc(30vw + 30vh);
-        height: calc(30vw + 30vh);
-        display: grid;
-        grid-template-columns: repeat(9, 12%);
-        grid-template-rows: repeat(9, 12%);
-        justify-content: center;
-        overflow-x: visible;
-        margin-left: 8vw;
+        width: calc(48vw);
+        height: calc(50vw);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-right: 4vw;
     }
+
+    .hintLabel {
+        font-size: var(--font-size-h3);
+        padding: 0;
+        padding-left: 2.5vw;
+        padding-top: 1vw;
+        margin: 0;
+        color: var(--color-secondary);
+    }
+
+    .hint {
+        font-size: var(--font-size-h4);
+        padding: 0;
+        margin: 6px;
+        padding-left: 3vw;
+        cursor: pointer;
+        color: var(--color-secondary);
+    }
+
+    .empty-box {
+        width: calc(6vw);
+        height: calc(6vw);
+        border: 1px solid transparent;
+    }
+
+    .text-box {
+        width: 6vw;
+        height: 6vw;
+        padding: 0;
+        background-color: white;
+        border: 1px solid black;
+        font-size: var(--font-size-h0);
+        text-align: center;
+        font-family: 'Architects Daughter';
+    }
+
+    .d-text-box {
+        width: 6vw;
+        height: 6vw;
+        padding: 0;
+        background-color: white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        font-size: var(--font-size-h0);
+        text-align: center;
+        font-family: 'Architects Daughter';
+    }
+
+    .row-text-box {
+        width: 6vw;
+        height: 6vw;
+        padding: 0;
+        background-color: white;
+        border-top: 2px solid black;
+        border-left: 1px solid black;
+        border-bottom: 2px solid black;
+        border-right: 1px solid black;
+        font-size: var(--font-size-h0);
+        text-align: center;
+        font-family: 'Architects Daughter';
+    }
+
+    .hint-box {
+        width: 22vw;
+        height: 6vw;
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        border: 1px solid transparent;
+        align-content: right;
+    }
+
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
-    .crossword-container {
-        width: calc(40vw + 40vh);
-        height: calc(40vw + 40vh);
-        display: grid;
-        grid-template-columns: repeat(9, 12%);
-        grid-template-rows: repeat(9, 12%);
-        justify-content: center;
-        overflow-x: visible;
-        padding-left: 8vw;
-        margin-top: 10vh;
-    }
-}
-
-@media screen and (min-width: 600px) {
 
     .crossword-container {
-        width: calc(30vw + 30vh);
-        height: calc(30vw + 30vh);
-        display: grid;
-        grid-template-columns: repeat(9, 12%);
-        grid-template-rows: repeat(9, 12%);
-        justify-content: center;
-        overflow-x: visible;
+        width: calc(80vw);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
         margin-top: 10vh;
-        padding-left: 14vw;
-        -webkit-appearance: none;
-        appearance: none;
     }
 
-.hints {
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 6;
-    grid-row-end: 10;
-    font-family: 'Nunito';
-    color: var(--color-secondary);
+    .hintLabel {
+        font-size: var(--font-size-h3);
+        padding: 0;
+        padding-left: 3vw;
+        padding-top: 1vw;
+        margin: 0;
+        color: var(--color-secondary);
+    }
+
+    .hint {
+        font-size: var(--font-size-h4);
+        padding: 0;
+        margin: 6px;
+        padding-left: 3.5vw;
+        cursor: pointer;
+        color: var(--color-secondary);
+    }
+
+    .empty-box {
+        width: calc(10vw);
+        height: calc(10vw);
+        border: 1px solid transparent;
+    }
+
+    .text-box {
+        width: 10vw;
+        height: 10vw;
+        padding: 0;
+        background-color: white;
+        border: 1px solid black;
+        font-size: var(--font-size-h0);
+        text-align: center;
+        font-family: 'Architects Daughter';
+    }
+
+    .hint-box {
+        width: 30vw;
+        height: 6vw;
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        border: 1px solid transparent;
+        align-content: right;
+    }
+
 }
-
-.hintLabel {
-    font-size: var(--font-size-h3);
-    padding: 0;
-    padding-left: 3vw;
-    margin: 0;
-    color: var(--color-secondary);
-}
-
-.hint {
-    font-size: var(--font-size-h4);
-    padding: 0;
-    margin: 6px;
-    padding-left: 3vw;
-    cursor: pointer;
-    color: var(--color-secondary);
-}
-
-.hint1 {
-    font-family: 'Nunito';
-    font-size: 12px;
-    grid-column: 1/1;
-    grid-row: 4/4;
-    padding: 4px;
-    background-color: transparent;
-    color: var(--color);
-}
-
-.hint2 {
-    font-family: 'Nunito';
-    font-size: 12px;
-    grid-column: 4/4;
-    grid-row: 1/1;
-    padding: 4px;
-    background-color: transparent;
-    color: var(--color);
-}
-
-
-.boxB {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    border-radius: 0px;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxFirstR {
-    border-radius: 0px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: none;
-    border-right: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-}
-
-.boxI {
-    border-radius: 0px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    border-right: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-}
-
-.boxD {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxFirstG {
-    border-radius: 0px;
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    border-left: none;
-    border-right: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-}
-
-.boxFirstE {
-    border-radius: 0px;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    border-right: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxT {
-    border-radius: 0px;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxLastE {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    border: 1px solid black;
-    border-top: none;
-    border-bottom: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxL1 {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    border: 1px solid black;
-    border-bottom: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxL2 {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxMiddleG {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxO1 {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 1px solid black;
-    border-top: none;
-    border-bottom: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxMiddleR {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 1px solid black;
-    border-bottom: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxO2 {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    border: 1px solid black;
-    border-top: none;
-    border-bottom: none;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.boxN {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-}
-
-.text-color {
-    color: var(--color-secondary);
-}}
 
 @media screen and (max-width: 600px) {
 
     .crossword-container {
         width: calc(80vw);
-        height: calc(80vw);
-        display: grid;
-        row-gap: -2px;
-        grid-template-columns: repeat(9, 12%);
-        grid-template-rows: repeat(9, 12%);
-        justify-content: center;
-        overflow-x: visible;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
         margin-top: 10vh;
-        padding-left: 14vw;
-        -webkit-appearance: none;
-        appearance: none;
     }
 
-.hints {
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 6;
-    grid-row-end: 10;
-    font-family: 'Nunito';
-    color: var(--color-secondary);
-}
+    .hintLabel {
+        font-size: var(--font-size-h4);
+        padding: 0;
+        padding-left: 2.5vw;
+        padding-top: 1vw;
+        margin: 0;
+        color: var(--color-secondary);
+    }
 
-.hintLabel {
-    font-size: var(--font-size-h4);
-    padding: 0;
-    padding-left: 3vw;
-    margin: 0;
-    color: var(--color-secondary);
-}
+    .hint {
+        font-size: var(--font-size-body);
+        padding: 0;
+        margin: 6px;
+        padding-left: 3vw;
+        cursor: pointer;
+        color: var(--color-secondary);
+    }
 
-.hint {
-    font-size: var(--font-size-body);
-    padding: 0;
-    margin: 6px;
-    padding-left: 3vw;
-    cursor: pointer;
-    color: var(--color-secondary);
-}
+    .empty-box {
+        width: calc(10vw);
+        height: calc(10vw);
+        border: 1px solid transparent;
+    }
 
-.hint1 {
-    font-family: 'Nunito';
-    font-size: 8px;
-    grid-column: 1/1;
-    grid-row: 4/4;
-    padding: 4px;
-    background-color: transparent;
-    color: var(--color);
-}
+    .text-box {
+        width: 10vw;
+        height: 10vw;
+        padding: 0;
+        background-color: white;
+        border: 1px solid black;
+        font-size: var(--font-size-h0);
+        text-align: center;
+        font-family: 'Architects Daughter';
+    }
 
-.hint2 {
-    font-family: 'Nunito';
-    font-size: 8px;
-    grid-column: 4/4;
-    grid-row: 1/1;
-    padding: 4px;
-    background-color: transparent;
-    color: var(--color);
-}
+    .hint-box {
+        width: 30vw;
+        height: 6vw;
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        border: 1px solid transparent;
+        align-content: right;
+    }
 
-
-.boxB {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    border-radius: 0px;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxFirstR {
-    border-radius: 0px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxI {
-    border-radius: 0px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxD {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxFirstG {
-    border-radius: 0px;
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    font-family: 'Architects Daughter';
-    //padding-bottom: 5px;
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxFirstE {
-    border-radius: 0px;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxT {
-    border-radius: 0px;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxLastE {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxL1 {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxL2 {
-    border-radius: 0px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxMiddleG {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxO1 {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxMiddleR {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxO2 {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
-}
-
-.boxN {
-    border-radius: 0px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    border: 1px solid black;
-    font-size: var(--font-size-h0);
-    text-align: center;
-    //padding-bottom: 5px;
-    font-family: 'Architects Daughter';
-    -webkit-appearance: none;
-    color: black;
 }
 
 .text-color {
     color: var(--color-secondary);
-}}
+}
+
+
 
