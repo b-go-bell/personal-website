@@ -27,7 +27,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 500px) {
     .nav-container {
         height: 8vh;
         display: flex;
@@ -47,89 +47,203 @@
     }
 }
 
-.home {
-    display: flex;
-    justify-content: space-around;
+@media screen and (max-width: 500px) {
+    .nav-container {
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5%;
+        padding-top: 1%;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        background-color: var(--color-primary);
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-primary);
+        padding-top: 4vh;
+    }
 }
 
-.signature {
-    font-family: 'Nunito';
-    text-decoration: none;
-    color: var(--color-secondary);
-    font-weight: bold;
-    font-size: var(--font-size-h3);
+@media screen and (min-width: 500px) {
+
+    .home {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .signature {
+        font-family: 'Nunito';
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-weight: bold;
+        font-size: var(--font-size-h3);
+    }
+
+    .signature:hover {
+        font-family: 'Nunito';
+        text-decoration: none;
+        color: var(--color-highlight);
+        font-weight: bold;
+        font-size: var(--font-size-h3);
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .link {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h3);
+        margin-left: 1.8vw;
+        margin-right: 1.8vw;
+
+    }
+
+    .flinks {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 8vw;
+        padding-right: 2vw;
+    }
+
+    .flink {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h2);
+    }
+
+    .flink-style {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--color-secondary);
+    }
+
+    .flink-text {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h3);
+        padding: calc(0.25vw + 0.25vh);
+        padding-left: 1.5vw;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .flink-text-special {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h3);
+        padding: calc(0.25vw + 0.25vh);
+        padding-left: 1.5vw;
+    }
+
+    .link:hover {
+        font-family: 'Nunito';
+        color: var(--color-highlight);
+        text-decoration: none;
+        font-size: var(--font-size-h3);
+        margin-left: 1.8vw;
+        margin-right: 1.8vw;
+
+    }
 }
 
-.signature:hover {
-    font-family: 'Nunito';
-    text-decoration: none;
-    color: var(--color-highlight);
-    font-weight: bold;
-    font-size: var(--font-size-h3);
-}
+@media screen and (max-width: 500px) {
 
-.links {
-    display: flex;
-    justify-content: space-around;
-}
+    .home {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.link {
-    font-family: 'Nunito';
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: var(--font-size-h3);
-    margin-left: 1.8vw;
-    margin-right: 1.8vw;
+    .signature {
+        font-family: 'Nunito';
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-weight: bold;
+        font-size: var(--font-size-h4);
+    }
 
-}
+    .signature:hover {
+        font-family: 'Nunito';
+        text-decoration: none;
+        color: var(--color-highlight);
+        font-weight: bold;
+        font-size: var(--font-size-h4);
+    }
 
-.flinks {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 8vw;
-    padding-right: 2vw;
-}
+    .links {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.flink {
-    font-family: 'Nunito';
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: var(--font-size-h2);
-}
+    .link {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h4);
+        margin-left: 1.8vw;
+        margin-right: 1.8vw;
 
-.flink-style {
-    cursor: pointer;
-    text-decoration: underline;
-    color: var(--color-secondary);
-}
+    }
 
-.flink-text {
-    font-family: 'Nunito';
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: var(--font-size-h3);
-    padding: calc(0.25vw + 0.25vh);
-    padding-left: 1.5vw;
-    cursor: pointer;
-    text-decoration: underline;
-}
+    .flinks {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 8vw;
+        padding-right: 2vw;
+    }
 
-.flink-text-special {
-    font-family: 'Nunito';
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: var(--font-size-h3);
-    padding: calc(0.25vw + 0.25vh);
-    padding-left: 1.5vw;
-}
+    .flink {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h3);
+    }
 
-.link:hover {
-    font-family: 'Nunito';
-    color: var(--color-highlight);
-    text-decoration: none;
-    font-size: var(--font-size-h3);
-    margin-left: 1.8vw;
-    margin-right: 1.8vw;
+    .flink-style {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--color-secondary);
+    }
 
+    .flink-text {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h4);
+        padding: calc(0.25vw + 0.25vh);
+        padding-left: 1.5vw;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .flink-text-special {
+        font-family: 'Nunito';
+        color: var(--color-secondary);
+        text-decoration: none;
+        font-size: var(--font-size-h4);
+        padding: calc(0.25vw + 0.25vh);
+        padding-left: 1.5vw;
+    }
+
+    .link:hover {
+        font-family: 'Nunito';
+        color: var(--color-highlight);
+        text-decoration: none;
+        font-size: var(--font-size-h4);
+        margin-left: 1.8vw;
+        margin-right: 1.8vw;
+
+    }
 }

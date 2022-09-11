@@ -39,7 +39,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        13.7 miles — 2,228 elevation gain
+                        13.7 miles — 2,228 feet elevation gain
                     </div>
                 </div>
             )
@@ -59,7 +59,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        3.3 miles — 902 elevation gain
+                        3.3 miles — 902 feet elevation gain
                     </div>
                 </div>
             )
@@ -79,7 +79,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        10.9 miles — 2,195 elevation gain
+                        10.9 miles — 2,195 feet elevation gain
                     </div>
                 </div>
             )
@@ -99,7 +99,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        1.7 miles — 157 elevation gain
+                        1.7 miles — 157 feet elevation gain
                     </div>
                 </div>
             )
@@ -119,7 +119,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        12.6 miles — 3,028 elevation gain
+                        12.6 miles — 3,028 feet elevation gain
                     </div>
                 </div>
             )
@@ -139,7 +139,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        3.4 miles — 643 elevation gain
+                        3.4 miles — 643 feet elevation gain
                     </div>
                 </div>
             )
@@ -159,7 +159,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        3.0 miles — 302 elevation gain
+                        3.0 miles — 302 feet elevation gain
                     </div>
                 </div>
             )
@@ -179,7 +179,7 @@ function Outdoors() {
                     </div>
                     <br/>
                     <div className="leisure-content-h3">
-                        4.1 miles — 217 elevation gain
+                        4.1 miles — 217 feet elevation gain
                     </div>
                 </div>
             )

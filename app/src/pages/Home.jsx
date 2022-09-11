@@ -53,11 +53,9 @@ function Home() {
       </div>
       <br/>
       <div className="home-content">
-          <img src={personal} className="personal-image" alt="collage of me"/>
+          <img src={personal} className="home-image" alt="collage of me"/>
           <div className="introduction-r">
             <div className="header-home">about—</div>
-            <br/>
-            <br/>
             While I'm from Boulder, Colorado, you'll usually find me in
             Los Angeles at University of Southern California; this semester,
             however, I took my studies abroad to University of Galway,
@@ -85,8 +83,8 @@ function Home() {
         <img src={ctc} className="ctc-image" alt="CTC volunteering"/>
       </div>
       <div className="home-bottom"/>
-      <div className="home-flex">
-        <img src={website} className="personal-image" alt="personal website project"/>
+      <div className="home-flex-projects">
+        <img src={website} className="home-image" alt="personal website project"/>
         <div className="introduction-r">
           <a className="header-home" href="/projects">projects—</a>
           <br/>

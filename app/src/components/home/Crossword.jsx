@@ -217,6 +217,7 @@ function Crossword() {
     }, [focusWord, bInput, firstRInput, iInput, dInput, firstGInput, firstEInput, tInput, lastEInput, l1Input, l2Input, middleGInput, o1Input, middleRInput, o2Input, nInput]);
 
     return(
+        <div className="crossword-flex-container">
         <div className="crossword-container">
             <input id="b" className="boxB" maxLength="1"
                     onClick={ () => pickWord(0, 1, 1)} value={bInput}
@@ -322,6 +323,7 @@ function Crossword() {
                     </div>
                 </p>
             </div>
+        </div>
         </div>
     );
 }

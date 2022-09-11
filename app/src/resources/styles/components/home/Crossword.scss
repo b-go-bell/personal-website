@@ -1,14 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
-.crossword-container {
-    width: calc(30vw + 30vh);
-    height: calc(30vw + 30vh);
-    display: grid;
-    grid-template-columns: repeat(9, 12%);
-    grid-template-rows: repeat(9, 12%);
-    justify-content: center;
-    overflow-x: visible;
-    margin-left: 8vw;
+
+@media screen and (min-width: 1000px) {
+    .crossword-container {
+        width: calc(30vw + 30vh);
+        height: calc(30vw + 30vh);
+        display: grid;
+        grid-template-columns: repeat(9, 12%);
+        grid-template-rows: repeat(9, 12%);
+        justify-content: center;
+        overflow-x: visible;
+        margin-left: 8vw;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .crossword-container {
+        width: calc(40vw + 40vh);
+        height: calc(40vw + 40vh);
+        display: grid;
+        grid-template-columns: repeat(9, 12%);
+        grid-template-rows: repeat(9, 12%);
+        justify-content: center;
+        overflow-x: visible;
+        padding-left: 8vw;
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .crossword-container {
+        width: calc(80vw);
+        height: calc(80vw);
+        display: grid;
+        grid-template-columns: repeat(9, 12%);
+        grid-template-rows: repeat(9, 12%);
+        justify-content: center;
+        overflow-x: visible;
+        margin-top: 10vh;
+        padding-left: 14vw;
+    }
 }
 
 .hints {
@@ -57,57 +89,6 @@
     color: var(--color);
 }
 
-@media screen and (min-width: 800px) {
-    .arrow {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        width: calc(20px + 4vw);
-        align-self: end;
-        vertical-align: end;
-        margin-bottom: 5vh;
-        margin-left: 2vh;
-    }
-
-    .play {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-top: 3vw;
-        margin-left: 2vw;
-        font-family: 'Architects Daughter';
-        font-size: calc(16px + 0.5vw);
-        transform: rotate(-10deg);
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .arrow {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        height: calc(15px + 1vw + 1.5vh);
-        align-self: end;
-        vertical-align: end;
-        margin-bottom: 5vh;
-        margin-left: 2vh;
-    }
-
-    .play {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-top: 3vw;
-        margin-left: 2vw;
-        font-family: 'Architects Daughter';
-        font-size: calc(12px + 0.5vw);
-        transform: rotate(-10deg);
-    }
-}
 
 .boxB {
     grid-column-start: 1;

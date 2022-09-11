@@ -38,7 +38,47 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .interactive-style-container {
+        width: 50vw;
+        margin-top: 10vh;
+        padding-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        animation-duration: 2s;
+        animation-name: slideup;
+        align-items: center;
+    }
+
+    .interactive-tab {
+        background-color: white;
+        border-radius: 8px 8px 0px 0px;
+        border: solid;
+        border-width: 3px 3px 0px 3px;
+        border-color: black;
+        min-height: 30px;
+        height: 5vh;
+        min-width: 140px;
+        width: 12vw;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .interactive-box {
+        background-color: white;
+        border: solid;
+        border-width: 3px;
+        border-color: black;
+        min-height: 350px;
+        height: 30vh;
+        min-width: 400px;
+        border-radius: 0px 8px 8px 8px;
+        display: flex;
+        padding-top: calc(10px + 0.2vw);
+        padding-bottom: calc(10px + 0.2vw);
+    }
+}
+
+@media screen and (max-width: 600px) {
     .interactive-style-container {
         width: 50vw;
         margin-top: 10vh;
