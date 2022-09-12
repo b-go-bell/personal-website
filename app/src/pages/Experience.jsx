@@ -107,17 +107,17 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;software engineer intern • summer 2022&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             As a software engineer intern for Intel's TD ATA MES Backend team, I gained
                             in-depth experience with company-specific tools and industry-standard practices.
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             During my internship I created a
                             fully-functional devops pipeline and a foundational testing suite
                             that was ready for my team to use out-of-the-box. I additionally
                             served as a co-lead of my intern cohort.
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             Next summer, I'll be rejoining my nuclear team as a software application intern.
                         </div>
                     </div>
@@ -136,12 +136,12 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;research assistant • spring 2022&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             Immediately loving CSCI 360: Introduction to Artificial Intelligence, I
                             pestered one of the class TA's to let me help out with his work in the
                             Interactive and Collaborative Autonomous Robotics lab until it happened.
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             Being in the lab for just a single semester before the school year ended,
                             I worked on creating my own implementation of MAP-Elites, a Quality Diversity algorithm
                             that generates morphologically diverse, optimal solutions within a multi-dimensional
@@ -163,12 +163,12 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;developer + vp of community outreach • 2020-2022&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             CTC was the first way I made friends as a freshman attending school online due to the
                             pandemic. I've been a frontend developer for Code the Change for 2 years now,
                             and was the vice president of community outreach last year.
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             The community outreach executive board position was a new role that I helped
                             kickstart in its first year that focuses on the club's philanthropic
                             commitments and comprehensive community impact.
@@ -189,12 +189,12 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;course producer • spring 2022&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             CSCI 103: Introduction to Programming is one of the early
                             "weeder" classes for computer science majors at USC, which is a
                             notion I try to minimize as much as possible.
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             Every week, I hold office hours for students to go over difficult concepts and
                             help debug their programming labs and assignments. In addition to this, I also
                             hold exam review sessions and help proctor and grade exams.
@@ -215,7 +215,7 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;wayback machine intern • summer 2021&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             The summer between my freshman and sophomore year I joined the
                             Internet Archive's Wayback Machine team, where I primarily
                             wrote Python scripts to handle large sets of
@@ -223,7 +223,7 @@ function Experience() {
                             Wayback Machine training material.
 
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             I had the honor of extending my internship through October,
                             culminating in a joint speech with the Director of the Wayback Machine
                             about the history of web archiving at the nonprofit's 25th anniversary
@@ -245,7 +245,7 @@ function Experience() {
                         <div className="l-project-details-exp">
                             &emsp;&ensp;quality engineer intern • summer 2020&emsp;&ensp;
                         </div>
-                        <div className="l-project-descrip">
+                        <div className="l-project-descrip-exp">
                             As a quality engineer intern for Anark, I developed
                             command line, RESTful API, and manual tests for the Anark Core Workstation,
                             and logged detailed result, bug, and references for the software engineers.

@@ -44,6 +44,14 @@
         margin-right: 2vw;
         margin-top: 12vh;
     }
+
+    .l-project-descrip-exp {
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        margin-right: 7vw;
+        margin-top: 3vh;
+        font-size: var(--font-size-h4);
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -72,10 +80,29 @@
     .l-project-details-exp {
         color: var(--color-basic-secondary);
         margin-right: 7vw;
+        margin-bottom: 2vh;
         font-family: 'Nunito';
-        font-size: calc(var(--font-size-body) - 4px);
+        font-size: calc(var(--font-size-body));
+    }
+
+    .l-project-descrip-exp {
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        width: 80vw;
+        margin-bottom: 2vh;
+        font-size: var(--font-size-h4);
     }
 }
+
+// @media screen and (max-width: 500px) {
+//     .l-project-details-exp {
+//         color: var(--color-basic-secondary);
+//         margin-right: 7vw;
+//         margin-bottom: 2vh;
+//         font-family: 'Nunito';
+//         font-size: calc(var(--font-size-body) - 4px);
+//     }
+// }
 
 @keyframes slidein {
     0% {
