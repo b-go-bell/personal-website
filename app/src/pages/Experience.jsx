@@ -98,9 +98,9 @@ function Experience() {
     return(
         <div className="experience-container">
             <Nav/>
-            <div className="other-projects">
-            <div className="project">
-                    <div className="project-info">
+            <div className="exp-other-projects">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title1">
                             Intel Corporation
                         </div>
@@ -128,8 +128,8 @@ function Experience() {
                 <br/>
                 <br/>
                 <br/>
-                <div className="project">
-                    <div className="project-info">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title2">
                             ICAROS Lab
                         </div>
@@ -155,8 +155,8 @@ function Experience() {
                 <br/>
                 <br/>
                 <br/>
-                <div className="project">
-                    <div className="project-info">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title3">
                             Code the Change
                         </div>
@@ -181,8 +181,8 @@ function Experience() {
                 <br/>
                 <br/>
                 <br/>
-                <div className="project">
-                    <div className="project-info">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title4">
                             USC CSCI 103
                         </div>
@@ -207,8 +207,8 @@ function Experience() {
                 <br/>
                 <br/>
                 <br/>
-                <div className="project">
-                    <div className="project-info">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title5">
                             Internet Archive
                         </div>
@@ -237,8 +237,8 @@ function Experience() {
                 <br/>
                 <br/>
                 <br/>
-                <div className="project">
-                    <div className="project-info">
+                <div className="exp-project">
+                    <div className="exp-project-info">
                         <div className="l-project-title" id="title6">
                             Anark Corporation
                         </div>
