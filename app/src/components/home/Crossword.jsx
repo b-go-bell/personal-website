@@ -217,108 +217,108 @@ function Crossword() {
 
     return(
         <div className="crossword-container">
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <input id="middleG" className="text-box" maxLength="1"
+            <div className="empty-box-0A"/>
+            <div className="empty-box-0"/>
+            <div className="empty-box-0C"/>
+            <input id="middleG" className="text-box-0D" maxLength="1"
                     onClick={ () => pickWord(1, 0, 2)} value={middleGInput}
                     onKeyDown={k => keyDown(k, middleGInput, ["middleG", "middleG", "middleG"], [ ["O1", "O1", "O1"], [setO1Input, setO1Input, setO1Input], [ ["middleR", "middleR", "middleR"], ["middleR", "middleR", "middleR"], ["middleR", "middleR", "middleR"]]] )}
                     onChange={e => change(e.target.value, middleGInput, setMiddleGInput, ["O1", "O1", "O1"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <input id="O1" className="text-box" maxLength="1"
+            <div className="empty-box-0E"/>
+            <div className="empty-box-0"/>
+            <div className="empty-box-0G"/>
+            <div className="empty-box-A"/>
+            <div className="empty-box-mid"/>
+            <div className="empty-box-1C"/>
+            <input id="O1" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(1, 0, 2)} value={o1Input}
                     onKeyDown={k => keyDown(k, o1Input, ["middleG", "middleG", "middleG"], [ ["middleR", "middleR", "middleR"], [setMiddleRInput, setMiddleRInput, setMiddleRInput], [ ["d", "d", "d"], ["d", "d", "d"], ["d", "d", "d"] ] ] )}
                     onChange={e => change(e.target.value, o1Input, setO1Input, ["middleR", "middleR", "middleR"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
+            <div className="empty-box-1E"/>
+            <div className="empty-box-mid"/>
+            <div className="empty-box-G"/>
+            <div className="empty-box-2A"/>
+            <div className="empty-box-2B"/>
+            <div className="empty-box-2C"/>
 
-            <input id="middleR" className="text-box" maxLength="1"
+            <input id="middleR" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(1, 0, 2)} value={middleRInput}
                     onKeyDown={k => keyDown(k, middleRInput, ["O1", "O1", "O1"], [ ["d", "d", "d"], [setDInput, setDInput, setDInput], [ ["firstG", "O2", "firstG"], ["firstG", "O2", "firstG"], ["firstG", "O2", "firstG"] ] ])}
                     onChange={e => change(e.target.value, middleRInput, setMiddleRInput, ["d", "d", "d"])}/>
 
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
+            <div className="empty-box-2E"/>
+            <div className="empty-box-2B"/>
+            <div className="empty-box-2G"/>
 
-            <input id="b" className="text-box" maxLength="1"
+            <input id="b" className="text-box-3A" maxLength="1"
                     onClick={ () => pickWord(0, 1, 1)} value={bInput}
                     onKeyDown={k => keyDown(k, bInput, ["b", "b", "b"], [ ["firstR", "firstR", "lastE"], [setFirstRInput, setFirstRInput, setLastEInput], [ ["i", "i", "i"], ["i", "i", "i"], ["L1", "L1", "L1"] ] ])}
                     onChange={e => change(e.target.value, bInput, setBInput, ["firstR", "firstR", "lastE"], false)}/>
 
-            <input id="firstR" className="text-box" maxLength="1"
+            <input id="firstR" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(0, 1, 2)} value={firstRInput}
                     onKeyDown={k => keyDown(k, firstRInput, ["b", "b", "b"], [ ["i", "i", "i"], [setIInput, setIInput, setIInput], [ ["d", "d", "d"], ["d", "d", "d"], ["d", "d", "d"] ] ])}
                     onChange={e => change(e.target.value, firstRInput, setFirstRInput, ["i", "i", "i"], false)}/>
 
-            <input id="i" className="text-box" maxLength="1"
+            <input id="i" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(0, 1, 2)} value={iInput}
                     onKeyDown={k => keyDown(k, iInput, ["firstR", "firstR", "firstR"], [ ["d", "d", "d"], [setDInput, setDInput, setDInput], [ ["firstG", "O2", "firstG"], ["firstG", "O2", "firstG"], ["firstG", "O2", "firstG"] ] ] )}
                     onChange={e => change(e.target.value, iInput, setIInput, ["d", "d", "d"], false)}/>
 
-            <input id="d" className="text-box" maxLength="1"
+            <input id="d" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(0, 2, 2)} value={dInput}
                     onKeyDown={k => keyDown(k, dInput, ["i", "middleR", "i"], [ ["firstG", "O2", "firstG"], [setFirstGInput, setO2Input, setFirstGInput], [ ["firstE", "firstE", "firstE"], ["n", "n", "n"], ["firstE", "firstE", "firstE"] ] ] )}
                     onChange={e => change(e.target.value, dInput, setDInput, ["firstG", "O2", "firstG"])}/>
 
-            <input id="firstG" className="text-box" maxLength="1"
+            <input id="firstG" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(0, 1, 2)} value={firstGInput}
                     onKeyDown={k => keyDown(k, firstGInput, ["d", "d", "d"], [ ["firstE", "firstE", "firstE"], [setFirstEInput, setFirstEInput, setFirstEInput], [ ["t", "t", "t"], ["t", "t", "t"], ["t", "t", "t"] ] ])}
                     onChange={e => change(e.target.value, firstGInput, setFirstGInput, ["firstE", "firstE", "firstE"])}/>
 
-            <input id="firstE" className="text-box" maxLength="1"
+            <input id="firstE" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(0, 1, 2)} value={firstEInput}
                     onKeyDown={k => keyDown(k, firstEInput, ["firstG", "firstG", "firstG"], [ ["t", "t", "t"], [setTInput, setTInput, setTInput], [["t", "t", "t"], ["t", "t", "t"],["t", "t", "t"]] ])}
                     onChange={e => change(e.target.value, firstEInput, setFirstEInput, ["t", "t", "t"])}/>
 
-            <input id="t" className="text-box" maxLength="1"
+            <input id="t" className="text-box-3G" maxLength="1"
                     onClick={ () => pickWord(0, 1, 2)} value={tInput}
                     onKeyDown={k => keyDown(k, tInput, ["firstE", "firstE", "firstE"], [ ["t", "t", "t"], [setTInput, setTInput, setTInput], [ ["t", "t", "t"], ["t", "t", "t"], ["t", "t", "t"] ] ] )}
                     onChange={e => change(e.target.value, tInput, setTInput, ["t", "t", "t"])}/>
 
-            <input id="lastE" className="text-box" maxLength="1"
+            <input id="lastE" className="text-box-3A" maxLength="1"
                     onClick={ () => pickWord(2, 0, 1)} value={lastEInput}
                     onKeyDown={k => keyDown(k, lastEInput, ["b", "b", "b"], [ ["L1", "L1", "L1"], [setL1Input, setL1Input, setL1Input], [ ["L2", "L2", "L2"], ["L2", "L2", "L2"], ["L2", "L2", "L2"] ] ] )}
                     onChange={e => change(e.target.value, lastEInput, setLastEInput, ["L1", "L1", "L1"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
+            <div className="empty-box-4B"/>
+            <div className="empty-box-4C"/>
 
-            <input id="O2" className="text-box" maxLength="1"
+            <input id="O2" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(1, 0, 2)} value={o2Input}
                     onKeyDown={k => keyDown(k, o2Input, ["d", "d", "d"], [ ["n", "n", "n"], [setNInput, setNInput, setNInput], [["n", "n", "n"], ["n", "n", "n"], ["n", "n", "n"] ] ])}
                     onChange={e => change(e.target.value, o2Input, setO2Input, ["n", "n", "n"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
+            <div className="empty-box-4B"/>
+            <div className="empty-box-4F"/>
+            <div className="empty-box-4G"/>
 
-            <input id="L1" className="text-box" maxLength="1"
+            <input id="L1" className="text-box-3A" maxLength="1"
                     onClick={ () => pickWord(2, 0, 1)} value={l1Input}
                     onKeyDown={k => keyDown(k, l1Input, ["lastE", "lastE", "lastE"], [ ["L2", "L2", "L2"], [setL2Input, setL2Input, setL2Input], [ ["L2", "L2", "L2"], ["L2", "L2", "L2"], ["L2", "L2", "L2"] ] ])}
                     onChange={e => change(e.target.value, l1Input, setL1Input, ["L2", "L2", "L2"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
+            <div className="empty-box-1E"/>
+            <div className="empty-box-1C"/>
 
-            <input id="n" className="text-box" maxLength="1"
+            <input id="n" className="text-box-mid" maxLength="1"
                     onClick={ () => pickWord(1, 0, 2)} value={nInput}
                     onKeyDown={k => keyDown(k, nInput, ["O2", "O2", "O2"], [ ["n", "n", "n"], [setNInput, setNInput, setNInput], [["n", "n", "n"], ["n", "n", "n"], ["n", "n", "n"] ] ])}
                     onChange={e => change(e.target.value, nInput, setNInput, ["n", "n", "n"])}/>
 
-            <div className="hint-box">
+            <div className="hint-box-1">
                 <p className="hintLabel">
                     ACROSS
                 </p>
@@ -329,15 +329,15 @@ function Crossword() {
                 </p>
             </div>
 
-            <input id="L2" className="text-box" maxLength="1"
+            <input id="L2" className="text-box-6A" maxLength="1"
                     onClick={ () => pickWord(2, 0, 1)} value={l2Input}
                     onKeyDown={k => keyDown(k, l2Input, ["L1", "L1", "L1"], [ ["L2", "L2", "L2"], [setL2Input, setL2Input, setL2Input], [ ["L2", "L2", "L2"], ["L2", "L2", "L2"], ["L2", "L2", "L2"] ] ])}
                     onChange={e => change(e.target.value, l2Input, setL2Input, ["L2", "L2", "L2"])}/>
 
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="empty-box"/>
-            <div className="hint-box">
+            <div className="empty-box-6B"/>
+            <div className="empty-box-6C"/>
+            <div className="empty-box-6D"/>
+            <div className="hint-box-2">
                 <p className="hintLabel">
                     DOWN
                 </p>
