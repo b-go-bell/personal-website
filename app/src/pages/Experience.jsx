@@ -104,7 +104,7 @@ function Experience() {
                         <div className="l-project-title" id="title1">
                             Intel Corporation
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;software engineer intern • summer 2022&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
@@ -133,7 +133,7 @@ function Experience() {
                         <div className="l-project-title" id="title2">
                             ICAROS Lab
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;research assistant • spring 2022&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
@@ -160,7 +160,7 @@ function Experience() {
                         <div className="l-project-title" id="title3">
                             Code the Change
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;developer + vp of community outreach • 2020-2022&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
@@ -186,7 +186,7 @@ function Experience() {
                         <div className="l-project-title" id="title4">
                             USC CSCI 103
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;course producer • spring 2022&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
@@ -212,7 +212,7 @@ function Experience() {
                         <div className="l-project-title" id="title5">
                             Internet Archive
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;wayback machine intern • summer 2021&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
@@ -242,7 +242,7 @@ function Experience() {
                         <div className="l-project-title" id="title6">
                             Anark Corporation
                         </div>
-                        <div className="l-project-details">
+                        <div className="l-project-details-exp">
                             &emsp;&ensp;quality engineer intern • summer 2020&emsp;&ensp;
                         </div>
                         <div className="l-project-descrip">
