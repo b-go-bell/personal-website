@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-.sidebar-container {
-    display: flex;
-    width: 25vw;
-    flex-direction: column;
-    margin-top: 14vh;
-    animation-duration: 2s;
-    animation-name: slideright;
-    align-items: left;
+@media screen and (min-width: 600px) {
+    .sidebar-container {
+        display: flex;
+        width: 25vw;
+        flex-direction: column;
+        margin-top: 14vh;
+        animation-duration: 2s;
+        animation-name: slideright;
+        align-items: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar-container {
+        display: flex;
+        width: 25vw;
+        flex-direction: row;
+        margin-top: 4vh;
+        animation-duration: 2s;
+        animation-name: slideright;
+        align-items: left;
+    }
 }
 
 .leisure-subject {

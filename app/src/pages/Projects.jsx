@@ -58,6 +58,7 @@ function Projects() {
             document.getElementById("title1").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
             document.getElementById("title2").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
             document.getElementById("title3").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
+            document.getElementById("title4").style.color = getComputedStyle(document.documentElement).getPropertyValue('--color');
 
             if(color === 6){
                 root?.style.setProperty("--color-basic-primary", "#ffffff");
@@ -90,6 +91,7 @@ function Projects() {
                 document.getElementById("title1").style.color = "#ffffff";
                 document.getElementById("title2").style.color = "#ffffff";
                 document.getElementById("title3").style.color = "#ffffff";
+                document.getElementById("title4").style.color = "#ffffff";
             }
         }
     }, [color]);
@@ -196,7 +198,7 @@ function Projects() {
                     </div>
                     <div className="r-description">
                         <div className="project-info">
-                            <div className="r-project-title" id="title3">
+                            <div className="r-project-title" id="title4">
                                 Affordable South LA
                             </div>
                             <div className="r-project-details">
