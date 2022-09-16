@@ -10,27 +10,38 @@
         animation-name: slideright;
         align-items: left;
     }
+
+    .leisure-subject {
+        margin-left: 3vw;
+        margin-right: 4vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        align-items: left;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .sidebar-container {
         display: flex;
-        width: 25vw;
+        width: 100vw;
         flex-direction: row;
         margin-top: 4vh;
         animation-duration: 2s;
         animation-name: slideright;
-        align-items: left;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leisure-subject {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        align-items: center;
     }
 }
 
-.leisure-subject {
-    margin-left: 3vw;
-    margin-right: 4vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    align-items: left;
-}
+
 
 .featured-leisure-button {
     text-decoration: underline;

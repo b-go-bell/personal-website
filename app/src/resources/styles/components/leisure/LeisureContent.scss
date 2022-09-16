@@ -19,6 +19,15 @@
         margin-bottom: 5vh;
     }
 
+    .music-content-container-reverse {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+    }
+
     .content-container {
         display: flex;
         flex-direction: row;
@@ -56,6 +65,7 @@
         font-size: var(--font-size-h2);
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        margin-bottom: 2.5vh;
     }
 
     .tennis-leisure-content {
@@ -81,6 +91,7 @@
         text-align: left;
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        margin-bottom: 2.5vh;
     }
 
     .video-width {
@@ -109,6 +120,16 @@
         text-align: center;
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+    }
+
+    .carousel-content {
+        width: 50vw;
+    }
+
+    .carousel-container {
+        width: 50vw;
+        margin-left: calc(5px + 0.5vw);
+        margin-right: calc(5px + 1.5vw);
     }
 }
 
@@ -143,6 +164,17 @@
         max-width: 70vw;
     }
 
+    .music-content-container-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        align-items: center;
+        max-width: 70vw;
+    }
+
     .content-container-header {
         display: flex;
         flex-direction: column;
@@ -150,12 +182,16 @@
         font-family: 'Nunito';
         font-size: var(--font-size-h0);
         margin-bottom: 5vh;
+        margin-top: 8vh;
     }
 
     .leisure-content {
         font-size: var(--font-size-h2);
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2.5vh;
     }
 
     .viola-leisure-content {
@@ -176,6 +212,8 @@
         font-size: var(--font-size-h3);
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        text-align: center;
+        margin-bottom: 2.5vh;
     }
 
     .video-width {
@@ -213,6 +251,16 @@
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
     }
+
+    .carousel-content {
+        width: 70vw;
+    }
+
+    .carousel-container {
+        width: 70vw;
+        margin-left: calc(5px + 0.5vw);
+        margin-right: calc(5px + 1.5vw);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -244,7 +292,18 @@
         font-size: var(--font-size-h2);
         margin-bottom: 5vh;
         align-items: center;
-        max-width: 70vw;
+        max-width: 80vw;
+    }
+
+    .music-content-container-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-size: var(--font-size-h2);
+        margin-bottom: 5vh;
+        align-items: center;
+        max-width: 80vw;
     }
 
     .content-container-header {
@@ -254,12 +313,16 @@
         font-family: 'Nunito';
         font-size: var(--font-size-h1);
         margin-bottom: 5vh;
+        margin-top: 8vh;
+        text-align: center;
     }
 
     .leisure-content {
         font-size: var(--font-size-h2);
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        text-align: center;
+        margin-bottom: 2.5vh;
     }
 
     .viola-leisure-content {
@@ -267,6 +330,9 @@
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
         padding-bottom: 5vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .tennis-leisure-content {
@@ -274,12 +340,16 @@
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
         padding-bottom: 5vh;
+        width: 80vw;
+        text-align: center;
     }
 
     .leisure-content-h3 {
         font-size: var(--font-size-h3);
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
+        text-align: center;
+        margin-bottom: 2.5vh;
     }
 
     .video-width {
@@ -318,6 +388,16 @@
         color: var(--color-basic-secondary);
         font-family: 'Nunito';
     }
+
+    .carousel-content {
+        width: 70vw;
+    }
+
+    .carousel-container {
+        width: 70vw;
+        margin-left: calc(5px + 0.5vw);
+        margin-right: calc(5px + 1.5vw);
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -339,23 +419,19 @@
     font-style: italic;
 }
 
+
+.linked-content {
+    color: var(--color-basic-secondary);
+}
+
 .content-columns {
     display: flex;
     flex-direction: column;
 }
 
-.carousel-content {
-    width: 50vw;
-}
-
-.carousel-container {
-    width: 50vw;
-    margin-left: calc(5px + 0.5vw);
-    margin-right: calc(5px + 1.5vw);
-}
-
-.linked-content {
-    color: var(--color-basic-secondary);
+.reverse-columns {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 

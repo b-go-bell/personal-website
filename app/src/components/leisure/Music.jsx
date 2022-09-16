@@ -141,7 +141,7 @@ function Music() {
             <div className="content-container-header">
                 currently playing—
             </div>
-            <div className="music-content-container">
+            <div className="music-content-container-reverse">
                 <div className="vid">
                     <video controls className="video-width">
                         <source src={duet} type="video/webm"/>
@@ -165,14 +165,6 @@ function Music() {
                     and participate in solo classes and chamber groups at USC because I enjoy it so much!
                 </div>
             </div>
-            {/* <div className="music-content-container">
-                <div>
-                    <video controls>
-                        <source src={quartet} type="video/mp4"/>
-                        Oh no! It looks like your browser doesn't support video :(
-                    </video>
-                </div>
-            </div> */}
         </div>
     );
 }

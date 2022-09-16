@@ -22,7 +22,6 @@ function Leisure() {
             </div>
             <br/>
             <br/>
-            <br/>
             <Footer/>
         </div>
     );

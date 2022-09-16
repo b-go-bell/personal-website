@@ -30,14 +30,11 @@ function Outdoors() {
                     <div className="leisure-content">
                         Blue Lake via Oh Be Joyful
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         Crested Butte, CO
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         July 9 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         13.7 miles — 2,228 feet elevation gain
                     </div>
@@ -50,14 +47,11 @@ function Outdoors() {
                     <div className="leisure-content">
                         Navajo Loop
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         Bryce Canyon National Park, UT
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         May 25 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         3.3 miles — 902 feet elevation gain
                     </div>
@@ -70,14 +64,11 @@ function Outdoors() {
                     <div className="leisure-content">
                         Copper Lake
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         Crested Butte, CO
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         July 16 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         10.9 miles — 2,195 feet elevation gain
                     </div>
@@ -90,14 +81,11 @@ function Outdoors() {
                     <div className="leisure-content">
                         Canyon Rim Trail
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         Colorado National Monument, CO
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         May 27 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         1.7 miles — 157 feet elevation gain
                     </div>
@@ -110,14 +98,13 @@ function Outdoors() {
                     <div className="leisure-content">
                         West Maroon Pass
                     </div>
-                    <br/>
+
                     <div className="leisure-content-h3">
                         Crested Butte, CO
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         July 2 2022
                     </div>
-                    <br/>
+
                     <div className="leisure-content-h3">
                         12.6 miles — 3,028 feet elevation gain
                     </div>
@@ -130,14 +117,13 @@ function Outdoors() {
                     <div className="leisure-content">
                         Cassidy Arch
                     </div>
-                    <br/>
+
                     <div className="leisure-content-h3">
                         Capitol Reef National Park, UT
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         May 26 2022
                     </div>
-                    <br/>
+
                     <div className="leisure-content-h3">
                         3.4 miles — 643 feet elevation gain
                     </div>
@@ -150,14 +136,12 @@ function Outdoors() {
                     <div className="leisure-content">
                         Painter Boy Loop
                     </div>
-                    <br/>
+
                     <div className="leisure-content-h3">
                         Crested Butte, CO
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         August 2 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         3.0 miles — 302 feet elevation gain
                     </div>
@@ -173,11 +157,9 @@ function Outdoors() {
                     <br/>
                     <div className="leisure-content-h3">
                         Zion National Park, UT
-                    </div>
-                    <div className="leisure-content-h3">
+                        <br/>
                         May 26 2022
                     </div>
-                    <br/>
                     <div className="leisure-content-h3">
                         4.1 miles — 217 feet elevation gain
                     </div>
@@ -271,7 +253,7 @@ function Outdoors() {
             <div className="content-container-header">
                 tennis—
             </div>
-            <div className="music-content-container">
+            <div className="music-content-container-reverse">
                 <div>
                     <img className="running-image" src={tennis}/>
                 </div>
