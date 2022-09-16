@@ -120,6 +120,7 @@ function Music() {
 
     return(
         <div className="leisure-content-container">
+            <div className="leisure-top-space"/>
             <div className="content-container-header">
                 currently listening to—
             </div>

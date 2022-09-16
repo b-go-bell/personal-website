@@ -131,6 +131,10 @@
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
+
+    .leisure-top-space {
+        height: 5vh;
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 600px) {
@@ -140,6 +144,7 @@
         margin-right: 8vw;
         margin-top: 2vh;
         font-size: var(--font-size-h0);
+        align-items: center;
     }
 
     .content-container {
@@ -261,6 +266,10 @@
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
+
+    .leisure-top-space {
+        height: 0vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -271,6 +280,8 @@
         padding-left: 5vw;
         margin-top: 2vh;
         font-size: var(--font-size-h0);
+        align-items: center;
+        text-align: center;
     }
 
     .content-container {
@@ -313,7 +324,7 @@
         font-family: 'Nunito';
         font-size: var(--font-size-h1);
         margin-bottom: 5vh;
-        margin-top: 8vh;
+        margin-top: 5vh;
         text-align: center;
     }
 
@@ -398,6 +409,10 @@
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
+
+    .leisure-top-space {
+        height: 0vh;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -408,9 +423,16 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 600px) {
     .gallery-image {
-        width: 60vw;
+        width: 70vw;
+        margin: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-image {
+        width: 80vw;
         margin: 2vw;
     }
 }

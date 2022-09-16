@@ -28,6 +28,10 @@ import sf6 from './../../resources/media/leisure/travel/sanfran/6.jpg'
 function Travel() {
     return(
         <div className="leisure-content-container">
+            <div className="leisure-top-space"/>
+            <div className="content-container-header">
+                <span className="italic">preface—</span>
+            </div>
             <div className="viola-leisure-content">
                 I want to give a preface by saying that I don't think that "travel" is really
                 the right name for this section. I was close to going with "exploring" (alas,

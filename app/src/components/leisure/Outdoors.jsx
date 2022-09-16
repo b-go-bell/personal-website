@@ -170,6 +170,7 @@ function Outdoors() {
 
     return(
         <div className="leisure-content-container">
+            <div className="leisure-top-space"/>
             <div className="content-container-header">
                 hiking—
             </div>
