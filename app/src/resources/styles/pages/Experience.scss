@@ -20,6 +20,13 @@
     width: 100vw;
 }
 
+.l-project-details-exp {
+    color: var(--color-basic-secondary);
+    margin-right: 7vw;
+    font-family: 'Nunito';
+    font-size: calc(var(--font-size-body));
+}
+
 @media screen and (min-width: 800px) {
     .exp-image {
         width: 40vw;
