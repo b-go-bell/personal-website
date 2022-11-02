@@ -23,6 +23,19 @@ import sf3 from './../../resources/media/leisure/travel/sanfran/3.jpg'
 import sf4 from './../../resources/media/leisure/travel/sanfran/4.JPG'
 import sf5 from './../../resources/media/leisure/travel/sanfran/5.jpg'
 import sf6 from './../../resources/media/leisure/travel/sanfran/6.jpg'
+import eir1 from './../../resources/media/leisure/travel/ireland/1.jpg'
+import eir2 from './../../resources/media/leisure/travel/ireland/2.jpg'
+import eir3 from './../../resources/media/leisure/travel/ireland/3.JPG'
+import eir4 from './../../resources/media/leisure/travel/ireland/4.jpg'
+import eir5 from './../../resources/media/leisure/travel/ireland/5.jpg'
+import eir6 from './../../resources/media/leisure/travel/ireland/6.jpg'
+import gen1 from './../../resources/media/leisure/travel/geneva/1.jpg'
+import gen2 from './../../resources/media/leisure/travel/geneva/2.jpg'
+import gen3 from './../../resources/media/leisure/travel/geneva/3.jpg'
+import gen4 from './../../resources/media/leisure/travel/geneva/4.jpg'
+import gen5 from './../../resources/media/leisure/travel/geneva/5.jpg'
+import gen6 from './../../resources/media/leisure/travel/geneva/6.JPG'
+
 
 
 function Travel() {
@@ -78,7 +91,24 @@ function Travel() {
                 ireland—
             </div>
             <div className="viola-leisure-content">
-                upcoming!
+                <img className="gallery-image" src={eir1} alt="aran islands"/>
+                <img className="gallery-image" src={eir3} alt="galway street art"/>
+                <img className="gallery-image" src={eir2} alt="connemara national park"/>
+                <img className="gallery-image" src={eir5} alt="pergola in cork"/>
+                <img className="gallery-image" src={eir4} alt=" cliffs of mohr"/>
+                <img className="gallery-image" src={eir6} alt="blarney castle"/>
+            </div>
+            <br/>
+            <div className="content-container-header">
+                geneva—
+            </div>
+            <div className="viola-leisure-content">
+                <img className="gallery-image" src={gen2} alt="san francsico at night"/>
+                <img className="gallery-image" src={gen4} alt="san francsico hotel"/>
+                <img className="gallery-image" src={gen5} alt="san francsico bay bridge"/>
+                <img className="gallery-image" src={gen3} alt="san francsico coit tower"/>
+                <img className="gallery-image" src={gen1} alt="san francsico mirror pic"/>
+                <img className="gallery-image" src={gen6} alt="san francsico mirror pic"/>
             </div>
             <br/>
             <div className="content-container-header">

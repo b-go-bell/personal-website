@@ -64,7 +64,7 @@ function Home() {
             <br/>
             I'm interested in technological sustainability, especially what that means
             socially. I like to build things that I think are cool, which for me means
-            that they are intuitive, interactive, and intriguing.
+            that they are intuitive, interactive, and accessible.
             <br/>
             <br/>
             My hope is that this website actively imparts these interests, but I
