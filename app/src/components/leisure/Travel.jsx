@@ -1,4 +1,10 @@
 import './../../resources/styles/components/leisure/LeisureContent.scss'
+import bar1 from './../../resources/media/leisure/travel/barcelona/1.JPG'
+import bar2 from './../../resources/media/leisure/travel/barcelona/2.JPG'
+import bar4 from './../../resources/media/leisure/travel/barcelona/4.jpg'
+import bar3 from './../../resources/media/leisure/travel/barcelona/3.JPG'
+import bar5 from './../../resources/media/leisure/travel/barcelona/5.JPG'
+import bar6 from './../../resources/media/leisure/travel/barcelona/6.jpg'
 import bigsur1 from './../../resources/media/leisure/travel/bigsur/1.jpg'
 import bigsur2 from './../../resources/media/leisure/travel/bigsur/2.JPG'
 import bigsur3 from './../../resources/media/leisure/travel/bigsur/3.JPG'
@@ -35,6 +41,12 @@ import gen3 from './../../resources/media/leisure/travel/geneva/3.jpg'
 import gen4 from './../../resources/media/leisure/travel/geneva/4.jpg'
 import gen5 from './../../resources/media/leisure/travel/geneva/5.jpg'
 import gen6 from './../../resources/media/leisure/travel/geneva/6.JPG'
+import mad1 from './../../resources/media/leisure/travel/madrid/1.jpg'
+import mad2 from './../../resources/media/leisure/travel/madrid/2.jpg'
+import mad3 from './../../resources/media/leisure/travel/madrid/3.jpg'
+import mad4 from './../../resources/media/leisure/travel/madrid/4.JPG'
+import mad5 from './../../resources/media/leisure/travel/madrid/5.jpg'
+import mad6 from './../../resources/media/leisure/travel/madrid/6.jpg'
 
 
 
@@ -61,6 +73,18 @@ function Travel() {
                 So I thought I'd share this love of travel-exploring-photography-learning-new-things with you here.
                 I have intentionally organized the sections down below by location, but in my mind the concept of
                 "place" is a very fluid one.
+            </div>
+            <br/>
+            <div className="content-container-header">
+                barcelona—
+            </div>
+            <div className="gallery">
+                <img className="gallery-image" src={bar2} alt="me on a rooftop overlooking the view"/>
+                <img className="gallery-image" src={bar1} alt="a massive paella being cooked in the street"/>
+                <img className="gallery-image" src={bar3} alt="me smiling in a street"/>
+                <img className="gallery-image" src={bar4} alt="a tasty paella I ate for dinner"/>
+                <img className="gallery-image" src={bar5} alt="me smiling at park guell"/>
+                <img className="gallery-image" src={bar6} alt="a pretty building at park guell"/>
             </div>
             <br/>
             <div className="content-container-header">
@@ -103,12 +127,24 @@ function Travel() {
                 geneva—
             </div>
             <div className="viola-leisure-content">
-                <img className="gallery-image" src={gen2} alt="san francsico at night"/>
-                <img className="gallery-image" src={gen4} alt="san francsico hotel"/>
-                <img className="gallery-image" src={gen5} alt="san francsico bay bridge"/>
-                <img className="gallery-image" src={gen3} alt="san francsico coit tower"/>
-                <img className="gallery-image" src={gen1} alt="san francsico mirror pic"/>
-                <img className="gallery-image" src={gen6} alt="san francsico mirror pic"/>
+                <img className="gallery-image" src={gen2} alt="a view of the fountain"/>
+                <img className="gallery-image" src={gen4} alt="breakfast with my friends"/>
+                <img className="gallery-image" src={gen5} alt="me petting a cat on the street"/>
+                <img className="gallery-image" src={gen3} alt="a beautiful fountain in old town geneva"/>
+                <img className="gallery-image" src={gen1} alt="a sculpture in a garden beneath a tree"/>
+                <img className="gallery-image" src={gen6} alt="me drinking from an old tiled fountain"/>
+            </div>
+            <br/>
+            <div className="content-container-header">
+                madrid—
+            </div>
+            <div className="viola-leisure-content">
+                <img className="gallery-image" src={mad2} alt="me standing in a plaza"/>
+                <img className="gallery-image" src={mad1} alt="a freshly baked palmier"/>
+                <img className="gallery-image" src={mad4} alt="a beautiful apartment building with nice lighting"/>
+                <img className="gallery-image" src={mad3} alt="a cool tile sign for a street"/>
+                <img className="gallery-image" src={mad6} alt="a garden outside of a museum"/>
+                <img className="gallery-image" src={mad5} alt="me smiling outside of a churro restaurant"/>
             </div>
             <br/>
             <div className="content-container-header">

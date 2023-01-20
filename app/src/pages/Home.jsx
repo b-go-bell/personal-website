@@ -57,7 +57,7 @@ function Home() {
           <div className="introduction-r">
             <div className="header-home">about—</div>
             While I'm from Boulder, Colorado, you'll usually find me in
-            Los Angeles at University of Southern California; this semester,
+            Los Angeles at University of Southern California; this past semester,
             however, I took my studies abroad to University of Galway,
             in Ireland.
             <br/>
