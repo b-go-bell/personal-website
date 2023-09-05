@@ -126,7 +126,7 @@ function Music() {
             </div>
             <div className="music-content-container">
                 <div className="viola-leisure-content">
-                    I almost always have music playing. I cycle in and out of songs, artists, and genres (which
+                    I love music! I cycle in and out of songs, artists, and genres (which
                     unfortuantely makes for a very messy Spotify), but no matter what the state of my other playlists
                     are, I always try to keep my "favorites" playlist up-to-date.
                     <br/>
@@ -163,7 +163,7 @@ function Music() {
                     I started playing violin when I was six, and transitioned to playing viola when I was
                     nine. While I don't exactly have a musical knack, get pretty nervous about playing
                     in front of people, and most definitely don't practice enough, I've continued to play
-                    and participate in solo classes and chamber groups at USC because I enjoy it so much!
+                    and participate in solo classes and chamber groups at USC because I enjoy it so much.
                 </div>
             </div>
         </div>

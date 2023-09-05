@@ -181,7 +181,7 @@ function Outdoors() {
                     (within a certain radius), and all ecosystems.
                     <br/>
                     <br/>
-                    This past summer I roadtripped through Utah visiting the state's national parks, and lived in
+                    Last summer I roadtripped through Utah visiting the state's national parks, and lived in
                     Crested Butte, Colorado (ironically, a ski town) and thought I'd share some of my favorite
                     trails that I got to hike.
                 </div>
