@@ -4,6 +4,7 @@ import Footer from './../components/Footer.jsx';
 import InteractiveStyle from './../components/home/InteractiveStyle.jsx';
 import Crossword from './../components/home/Crossword.jsx';
 import personal from './../resources/media/home/me.png';
+import lavalab from './../resources/media/home/demonight.JPEG';
 import ctc from './../resources/media/home/rfphome.JPG';
 import website from './../resources/media/home/website.png';
 
@@ -38,15 +39,15 @@ function Home() {
             Hi— I'm Bridget.
             <br/>
             <br/>
-            I like doing a lot of things.
-            <br/>
-            <span className="intro-interjection">(that's what this website is for)</span>
-            <br/>
-            But, what I really like is doing things with other people.
+            I like building things, but what I really like is building things with other people.
             <br/>
             <br/>
-            —So let's do this website together!
+            —So let's build this website together.
+            <br/>
+            <br/>
+            <span className="intro-interjection">Play with the <span className="code-font"> styles.css</span> sidebar!</span>
           </div>
+
           <div>
             <InteractiveStyle/>
           </div>
@@ -57,18 +58,18 @@ function Home() {
           <div className="introduction-r">
             <div className="header-home">about—</div>
             While I'm from Boulder, Colorado, you'll usually find me in
-            Los Angeles at University of Southern California; this past semester,
-            however, I took my studies abroad to University of Galway,
+            Los Angeles at the University of Southern California. Last year,
+            however, I took my studies abroad to the University of Galway
             in Ireland.
             <br/>
             <br/>
-            I'm interested in technological sustainability, especially what that means
-            socially. I like to build things that I think are cool, which for me means
-            that they are intuitive, interactive, and accessible.
+            I like to build things that I think are cool, which for me means
+            that they are intuitive, interactive, and sustainable. I'm biased for action, and am always
+            considering impact, no matter the scale.
             <br/>
             <br/>
-            My hope is that this website actively imparts these interests, but I
-            believe the most active way you can learn about someone is meeting them, so reach out!
+            My hope is that this website imparts these interests, but the best way
+            to learn about someone is by talking to them, so <a className="home-link" href="#footer">reach out</a>!
           </div>
       </div>
       <div className="home-bottom"/>
@@ -77,14 +78,14 @@ function Home() {
           <a className="header-home" href="/experience">experience—</a>
           <br/>
           <br/>
-          From big tech to nonprofits, I've worked with a surprising variety of companies
+          From big tech to nonprofits to even a startup, I've worked with a surprising variety of companies
           and paradigms the short time I've been active in the professional software world.
         </div>
-        <img src={ctc} className="ctc-image" alt="CTC volunteering"/>
+        <img src={ctc} className="ctc-image" alt="Volunteering with Code The Change"/>
       </div>
       <div className="home-bottom"/>
       <div className="home-flex-projects">
-        <img src={website} className="home-image" alt="personal website project"/>
+        <img src={lavalab} className="home-image" alt="Pitching at LavaLab Demo Night"/>
         <div className="introduction-r">
           <a className="header-home" href="/projects">projects—</a>
           <br/>
@@ -92,7 +93,7 @@ function Home() {
           Documentation is  one of my biggest pain-points (and thus one of
           my biggest goals for improvment). However, just because something isn't
           perfect, doesn't mean we shouldn't share it, so I wanted to include some
-          (bits) of projects I'm especially proud of.
+          bits of projects I'm especially proud of.
         </div>
       </div>
       <div className="home-bottom"/>
@@ -103,13 +104,19 @@ function Home() {
           <br/>
           I struggled putting together sections for my leisure section because there are
           so many things that I enjoy doing, but the few I did include I felt were relevant
-          enough to be written about. An honorable mention goes to puzzles, which doesn't have its
-          own page, but is recognized here.
+          enough to be written about.
+          <br/>
+          <br/>
+          An honorable mention goes to puzzles, which doesn't have its
+          own page, but is recognized here with an interactive crossword.
         </div>
         <Crossword/>
       </div>
       <div className="home-bottom"/>
-      <Footer/>
+      <div id="footer">
+        <Footer/>
+      </div>
+
     </div>
   );
 }

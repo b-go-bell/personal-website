@@ -1,5 +1,19 @@
 @import "./../../design-tokens/css-variables.scss";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
+html {
+  scroll-behavior: smooth;
+}
+
+.code-font {
+  font-family: var(--font-code);
+}
+
+.home-link {
+  font-family: 'Nunito';
+  color: var(--color-secondary);
+  font-size: var(--font-size-h2);
+}
 
 @media screen and (min-width: 1000px) {
   .home-content {

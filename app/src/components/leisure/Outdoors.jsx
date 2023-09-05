@@ -12,8 +12,7 @@ import monument from './../../resources/media/leisure/outdoors/monument1.JPG';
 import reef from './../../resources/media/leisure/outdoors/reef4.JPG';
 import resort from './../../resources/media/leisure/outdoors/resort.jpg';
 import zion from './../../resources/media/leisure/outdoors/zion5.JPG';
-import running from './../../resources/media/leisure/outdoors/running.jpg';
-import tennis from './../../resources/media/leisure/outdoors/wall.jpg';
+
 
 function Outdoors() {
 
@@ -27,10 +26,10 @@ function Outdoors() {
         if(hikeinfo === 0) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Blue Lake via Oh Be Joyful
                     </div>
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Crested Butte, CO
                         <br/>
                         July 9 2022
@@ -44,10 +43,10 @@ function Outdoors() {
         else if(hikeinfo === 1) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Navajo Loop
                     </div>
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Bryce Canyon National Park, UT
                         <br/>
                         May 25 2022
@@ -61,10 +60,10 @@ function Outdoors() {
         else if(hikeinfo === 2) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Copper Lake
                     </div>
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Crested Butte, CO
                         <br/>
                         July 16 2022
@@ -78,10 +77,10 @@ function Outdoors() {
         else if(hikeinfo === 3) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Canyon Rim Trail
                     </div>
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Colorado National Monument, CO
                         <br/>
                         May 27 2022
@@ -95,11 +94,11 @@ function Outdoors() {
         else if(hikeinfo === 4 || hikeinfo === 5 ){
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         West Maroon Pass
                     </div>
 
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Crested Butte, CO
                         <br/>
                         July 2 2022
@@ -114,11 +113,11 @@ function Outdoors() {
         else if(hikeinfo === 6) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Cassidy Arch
                     </div>
 
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Capitol Reef National Park, UT
                         <br/>
                         May 26 2022
@@ -133,11 +132,10 @@ function Outdoors() {
         else if(hikeinfo === 7) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         Painter Boy Loop
                     </div>
-
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Crested Butte, CO
                         <br/>
                         August 2 2022
@@ -151,11 +149,10 @@ function Outdoors() {
         else if(hikeinfo === 8) {
             return(
                 <div className="content-columns">
-                    <div className="leisure-content">
+                    <div className="outdoors-title">
                         The Narrows
                     </div>
-                    <br/>
-                    <div className="leisure-content-h3">
+                    <div className="outdoors-subtitle">
                         Zion National Park, UT
                         <br/>
                         May 26 2022
@@ -196,7 +193,8 @@ function Outdoors() {
                                     onChange={(index) => {setHikeinfo(index)}}
                                     showStatus={false}
                                     dynamicHeight={true}
-                                    showThumbs={false}>
+                                    showThumbs={false}
+                                    className="outdoors-carousel">
                             <div className="carousel-content">
                                 <img src={blue} />
                             </div>
@@ -227,56 +225,6 @@ function Outdoors() {
                         </Carousel>
                     </div>
                     {getHikeContent()}
-                </div>
-            </div>
-            <div className="content-container-header">
-                running—
-            </div>
-            <div className="music-content-container">
-                <div className="leisure-content">
-                    Cross country is one of those things I picked up late in high school as
-                    a sort of "why not?" that I've actually generally stuck with
-                    since I started. It's not always easy, but the post-run feel is always worth
-                    it.
-                    <br/>
-                    <br/>
-                    I don't run as much in Los Angeles as I really should especially given the good
-                    weather, but I'm much more partial to trail running—any dirt road will do. I
-                    ran my first half-marathon at the Boulder Reservoir last summer with a sub- 2 hour
-                    pace, and hope to run a full marathon soon!
-                    <br/>
-                    <br/>
-                </div>
-                <div>
-                    <img  className="running-image" src={running}/>
-                </div>
-            </div>
-            <div className="content-container-header">
-                tennis—
-            </div>
-            <div className="music-content-container-reverse">
-                <div>
-                    <img className="running-image" src={tennis}/>
-                </div>
-                <div className="tennis-leisure-content">
-                    A fun fact about me is that my first job was working as a tennis instructor at a
-                    local club for over three years. While I started with coaching the beginner youth
-                    and middle school groups, overtime I was promoted to working with the advanced
-                    high school tournament groups, and was the first female junior coach to hold
-                    private lessons.
-                    <br/>
-                    <br/>
-                    In my opinion, I was a much better coach than competitive player. While I
-                    got lucky my first season winning the Colorado State 2 singles championship (
-                    <a  className="linked-content" target="_blank" href="https://www.bocopreps.com/2017/06/05/girls-tennis-dawsons-bell-earns-bocopreps-player-of-the-year-honors/">
-                        read about that here</a>),
-                    I didn't have the best follow-up seasons, and my plans
-                    for redemption (<a  className="linked-content"   target="_blank" href="https://www.bocopreps.com/2020/03/10/girls-tennis-bell-barbour-hope-to-make-season-special-for-dawson-school/">
-                    read about that here</a>) were squashed by the pandemic.
-                    <br/>
-                    <br/>
-                    While I don't coach or play competitively anymore, I still love hitting around with
-                    my family, which is what got me into the sport in the first place.
                 </div>
             </div>
         </div>

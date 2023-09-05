@@ -30,7 +30,7 @@ function Sidebar({handleClick}) {
             </div>
             <div className="leisure-subject">
                 <button className={styleButton(2)}  onClick={() => buttonClick(2)}>
-                    sports & outdoors
+                    outdoors
                 </button>
             </div>
             <div className="leisure-subject">

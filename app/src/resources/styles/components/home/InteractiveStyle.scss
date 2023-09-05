@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 @import "./../../../design-tokens/css-variables.scss";
-
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 @media screen and (min-width: 1000px) {
     .interactive-style-container {
@@ -119,8 +118,8 @@
 @media screen and (min-width: 600px) {
     .tab-text {
         margin-left: calc(3px + 0.7vw);
-        padding-top: calc(2.5px + 0.3vw);
-        font-family: 'Ubuntu Mono';
+        padding-top: calc(3px + .8vh);
+        font-family: var(--font-code);
         font-size: var(--font-size-h3);
         color: var(--color-highlight1);
     }
@@ -194,7 +193,7 @@
     }
 
     .small-text-button {
-        font-family: 'Ubuntu Mono';
+        font-family: var(--font-code);
         font-size: calc(6px + var(--font-size-h4));
         color: var(--color-highlight1);
         border: none;
@@ -203,7 +202,7 @@
     }
 
     .big-text-button {
-        font-family: 'Ubuntu Mono';
+        font-family: var(--font-code);
         font-size: calc(6px + var(--font-size-h1));
         color: var(--color-highlight1);
         border: none;
@@ -224,7 +223,7 @@
     }
 
     .codespace {
-        font-family: 'Ubuntu Mono';
+        font-family: var(--font-code);
         padding-left: 1vw;
 
     }
@@ -245,7 +244,7 @@
 .tab-text {
     margin-left: calc(3px + 0.7vw);
     padding-top: calc(3px + 0.7vw);
-    font-family: 'Ubuntu Mono';
+    font-family: var(--font-code);
     font-size: var(--font-size-h4);
     color: var(--color-highlight1);
 }
@@ -316,7 +315,7 @@
 }
 
 .small-text-button {
-    font-family: 'Ubuntu Mono';
+    font-family: var(--font-code);
     font-size: calc(6px + var(--font-size-h4));
     color: var(--color-highlight1);
     border: none;
@@ -325,7 +324,7 @@
 }
 
 .big-text-button {
-    font-family: 'Ubuntu Mono';
+    font-family: var(--font-code);
     font-size: calc(6px + var(--font-size-h1));
     color: var(--color-highlight1);
     border: none;
@@ -346,7 +345,7 @@
 }
 
 .codespace {
-    font-family: 'Ubuntu Mono';
+    font-family: var(--font-code);
     padding-left: 1vw;
 
 }

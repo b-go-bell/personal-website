@@ -31,29 +31,37 @@ function Footer() {
                 <br/>
             </div>
             <div className="footer-container">
-                <div className="flinks">
-                    <div className="flink">
-                        contact—
+                <div className="inner-footer-container">
+                    <div className="flinks">
+                        <div className="flink">
+                            contact—
+                        </div>
+                        <a className="flink-text" href="mailto:bridget.go.bell@gmail.com">
+                            bridget.go.bell@gmail.com
+                        </a>
                     </div>
-                    <a className="flink-text" href="mailto:bridget.go.bell@gmail.com">
-                        bridget.go.bell@gmail.com
-                    </a>
+                    <div className="flinks">
+                        <div className="flink">
+                            info—
+                        </div>
+                        <a className="flink-text" target="_blank" href={resume}>
+                            resume
+                        </a>
+                    </div>
+                    <div className="flinks">
+                        <div className="flink">
+                            social—
+                        </div>
+                        <div className="flink-text-special">
+                            <a className="flink-style" target="_blank" href="https://www.linkedin.com/in/bridget-go-bell/">LinkedIn</a>,
+                            <a className="flink-style" target="_blank" href="https://github.com/b-go-bell">GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="flinks">
-                    <div className="flink">
-                        info—
-                    </div>
-                    <a className="flink-text" target="_blank" href={resume}>
-                        resume
-                    </a>
-                </div>
-                <div className="flinks">
-                    <div className="flink">
-                        social—
-                    </div>
-                    <div className="flink-text-special">
-                        <a className="flink-style" target="_blank" href="https://www.linkedin.com/in/bridget-go-bell/">LinkedIn</a>, <a className="flink-style" target="_blank" href="https://github.com/b-go-bell">GitHub</a>, <a className="flink-style" target="_blank" href="https://www.instagram.com/bridget_go_bell/">Instagram</a>
-                    </div>
+                <div className="creation-note">
+                    <br/>
+                    <br/>
+                    Built and designed by Bridget Bell.
                 </div>
             </div>
             <div>

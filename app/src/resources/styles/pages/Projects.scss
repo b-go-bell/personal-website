@@ -136,6 +136,18 @@
         font-family: 'Nunito';
         font-size: var(--font-size-body);
     }
+
+    .parallax-container {
+        width: 65vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 5vw;
+    }
+
+    .firefly-image {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -223,10 +235,15 @@
     }
 
     .parallax-container {
-        width: 100vw;
+        width: 90vw;
+        align-items: center;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: center;
+        padding: 5vw;
+    }
+
+    .firefly-image {
+        max-width: 100%;
     }
 
     .other-projects {

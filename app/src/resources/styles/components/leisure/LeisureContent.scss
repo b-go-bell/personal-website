@@ -1,5 +1,18 @@
 @import "./../../../design-tokens/css-variables.scss";
 
+.outdoors-carousel {
+    margin: 0;
+    padding: 0;
+}
+
+.outdoors-title {
+    font-size: var(--font-size-h1);
+    color: var(--color-basic-secondary);
+    font-weight: bold;
+    font-family: 'Nunito';
+    margin-bottom: 2.5vh;
+}
+
 
 @media screen and (min-width: 1200px) {
 
@@ -39,6 +52,17 @@
         animation-name: slide-right;
     }
 
+    .outdoors-subtitle {
+        padding-left: calc(5px + .5vw);
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h4);
+        text-align: left;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-style: italic;
+        margin-bottom: 2.5vh;
+    }
+
     .content-container-sl {
         display: flex;
         flex-direction: row;
@@ -48,6 +72,8 @@
         margin-bottom: 5vh;
         animation-duration: 2s;
         animation-name: slide-left;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .content-container-header {
@@ -85,7 +111,7 @@
     }
 
     .leisure-content-h3 {
-        padding-left: calc(5px + 0.5vw);
+        //padding-left: calc(5px + 0.5vw);
         padding-right: calc(5px + 3vw);
         font-size: var(--font-size-h3);
         text-align: left;
@@ -123,11 +149,11 @@
     }
 
     .carousel-content {
-        width: 50vw;
+        max-width: 40vw;
     }
 
     .carousel-container {
-        width: 50vw;
+        max-width: 40vw;
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
@@ -145,6 +171,17 @@
         margin-top: 2vh;
         font-size: var(--font-size-h0);
         align-items: center;
+    }
+
+    .outdoors-subtitle {
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h4);
+        text-align: left;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-style: italic;
+        margin-bottom: 2.5vh;
+        text-align: center;
     }
 
     .content-container {
@@ -258,11 +295,11 @@
     }
 
     .carousel-content {
-        width: 70vw;
+        width: 60vw;
     }
 
     .carousel-container {
-        width: 70vw;
+        max-width: 60vw;
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
@@ -281,6 +318,17 @@
         margin-top: 2vh;
         font-size: var(--font-size-h0);
         align-items: center;
+        text-align: center;
+    }
+
+    .outdoors-subtitle {
+        padding-right: calc(5px + 3vw);
+        font-size: var(--font-size-h4);
+        text-align: left;
+        color: var(--color-basic-secondary);
+        font-family: 'Nunito';
+        font-style: italic;
+        margin-bottom: 2.5vh;
         text-align: center;
     }
 
@@ -401,11 +449,11 @@
     }
 
     .carousel-content {
-        width: 70vw;
+        max-width: 60vw;
     }
 
     .carousel-container {
-        width: 70vw;
+        max-width: 60vw;
         margin-left: calc(5px + 0.5vw);
         margin-right: calc(5px + 1.5vw);
     }
@@ -449,6 +497,7 @@
 .content-columns {
     display: flex;
     flex-direction: column;
+    min-width: 30vw;
 }
 
 .reverse-columns {

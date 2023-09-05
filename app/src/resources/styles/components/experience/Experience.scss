@@ -1,0 +1,123 @@
+.exp-carousel-container {
+    width: 80vw;
+    grid-column: 1 / 3;
+    background-color: var(--color-basic-primary);
+    padding: 5vw;
+}
+
+.exp-carousel {
+    max-width: 80vw;
+}
+
+.experiences-list {
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px;
+    list-style: none;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    margin-top: 32px;
+}
+
+.experiences-list .experiences-item {
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 0;
+    line-height: 1;
+
+  }
+
+.experiences-button {
+    position: relative;
+    margin: 0;
+    padding: 8px 40px;
+    color: var( --color-primary);
+    line-height: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.experience-active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+    content: '';
+}
+
+.experience-label {
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.panel {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    align-items: center;
+    vertical-align: bottom;
+
+}
+
+.panel-image {
+    max-width: 30vw;
+    min-width: 30vw;
+}
+
+.experience-photo {
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+.experience-title {
+    font-family: 'Nunito';
+    font-size: var(--font-size-h1);
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+
+.experience-subtitle {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-size: var(--font-size-h4);
+    color: var(--color-basic-secondary);
+}
+
+.experience-desc {
+    color: var(--color-basic-secondary);
+    font-size: var(--font-size-h3);
+    margin-left: 2vw;
+    font-family: 'Nunito';
+}
+
+.experience-subdesc {
+    font-style: italic;
+    color: var(--color-basic-secondary);
+    font-size: var(--font-size-h4);
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+.experience-text {
+    margin-left: 2vw;
+    max-width: 40vw;
+    vertical-align: center;
+    align-items: center;
+}
+
+
+
