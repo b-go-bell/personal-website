@@ -43,8 +43,8 @@ const experiences = [
     name: 'Intel Corporation, 2023',
     title: 'Software Application Intern @ Intel',
     time: 'May - August 2023',
-    desc2: "• Led the GitHub Actions development for the modernization project started by my first internship, ultimately releasing my design in production.",
-    desc3: "• Created a dashboard to track data archival rates using ReactJS, Python, and SQL, as well as researched regression testing possibilities, ultimately building a unit test structure that is being built on.",
+    desc2: "• Led the GitHub Actions development for the modernization project started by my first internship, releasing my design in production.",
+    desc3: "• Created a dashboard to track data archival rates using ReactJS, Python, and SQL; researched regression testing possibilities, building a unit test scaffolding proof of concept.",
     skills: 'Git & GitHub Actions, C#, ReactJS, Python, SQL, PowerShell & Bash',
     img: intel,
   },
@@ -53,6 +53,7 @@ const experiences = [
     title: 'Software Engineer Intern @ Intel',
     time: 'June - August 2022',
     desc1: "• Created a CI/CD proof of concept with GitHub Actions using multiple interal APIs in a novel way, catalyzing an inter-team modernization effort.",
+    desc2: "• Served as the lead of my intern cohort, fostering community and hosting events.",
     skills: 'Git & GitHub Actions, C#, PowerShell & Bash, Visual Basic',
     img: intel,
   },
@@ -60,7 +61,7 @@ const experiences = [
     name: 'Internet Archive',
     title: "Software Engineer Intern @ Internet Archive",
     time: 'April - October 2021',
-    desc1: "• Quickly archived tens of millions of web pages using Python into The Wayback Machine using Python.",
+    desc1: "• Quickly archived millions of web pages using Python into The Wayback Machine.",
     desc2: "• Presented on the history of web archiving at the Internet Archive's 25th Anniversary event, viewed by thousands globally.",
     skills: 'Python, public speaking',
     img: ia,
@@ -134,7 +135,7 @@ const NonUSC = () => {
           className="exp-carousel"
         >
 
-          {experiences.map(({ name, title, desc1, desc2, desc3, skills, img, time }) => {
+          {experiences.map(({ name, title, desc1, desc2, desc3, desc4, skills, img, time }) => {
 
             return (
               <div className="panel">

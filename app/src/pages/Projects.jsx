@@ -120,7 +120,7 @@ function Projects() {
                             Winner of the Judge's Choice Award for the Spring '23 LavaLab cohort, the top prize available.
                         </div>
                         <div className="h-project-descrip" id="h-descrip1">
-                            I served as the team's product manager; watch my 3-minute pitch <a href="https://www.youtube.com/watch?v=Yf0kycLK31w" target="_blank">here</a>.
+                            I served as the team's product manager; watch my 3-minute pitch <a href="https://www.youtube.com/watch?v=Yf0kycLK31w" target="_blank" class="demo-link">here</a>.
                         </div>
 
                     </div>

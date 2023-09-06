@@ -6,6 +6,10 @@
     background: var(--color-basic-primary);
 }
 
+.demo-link {
+    color: var(--color-basic-primary);
+}
+
 @media screen and (min-width: 1000px) {
     .h-project {
         display: flex;
