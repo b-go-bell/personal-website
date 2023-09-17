@@ -18,7 +18,7 @@
     list-style: none;
     background-color: var(--color-secondary);
     border-radius: 10px;
-    margin-top: 32px;
+    //margin-top: 32px;
 }
 
 .experiences-list .experiences-item {
@@ -59,21 +59,57 @@
     z-index: 2;
 }
 
-.panel {
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    align-items: center;
-    vertical-align: bottom;
+@media screen and (min-width: 800px) {
+    .panel {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        align-items: center;
+        vertical-align: bottom;
 
+    }
+
+    .panel-image {
+        max-width: 30vw;
+        min-width: 30vw;
+    }
+
+    .experience-text {
+        margin-left: 2vw;
+        max-width: 40vw;
+        vertical-align: center;
+        align-items: center;
+    }
 }
 
-.panel-image {
-    max-width: 30vw;
-    min-width: 30vw;
+@media screen and (max-width: 800px) {
+    .panel {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        // padding-left: 5vw;
+        // padding-right: 5vw;
+        align-items: center;
+        vertical-align: bottom;
+
+    }
+
+    .panel-image {
+        max-width: 60vw;
+        min-width: 60vw;
+    }
+
+    .experience-text {
+        //margin-left: 2vw;
+        margin-top: 3vh;
+        max-width: 70vw;
+        vertical-align: center;
+        align-items: center;
+    }
 }
+
 
 .experience-photo {
     display: block;
@@ -112,12 +148,6 @@
     font-family: 'Nunito';
 }
 
-.experience-text {
-    margin-left: 2vw;
-    max-width: 40vw;
-    vertical-align: center;
-    align-items: center;
-}
 
 
 

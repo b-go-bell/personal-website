@@ -97,7 +97,6 @@ const experiences = [
 ]
 
 const USC = () => {
-  const [ind, setInd] = useState(0);
 
   const SegmentedControl = ({ goToSlide }) => {
     const [activeItem, setActiveitem] = useState(0)
